@@ -1,4 +1,4 @@
-import { Button } from '@/ui';
+import { Button, UILink } from '@/ui';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -13,6 +13,19 @@ export default function Home() {
       <Button bg="white" color="black" size="full" fontWeight="fv500">
         Recreate
       </Button>
+
+      <UILink href="/" color="black" underline>
+        link
+      </UILink>
+      <UILink href="/" color="white" underline>
+        link
+      </UILink>
+      <UILink href="/" color="black">
+        link
+      </UILink>
+      <UILink href="/" color="white">
+        link
+      </UILink>
     </div>
   );
 }
