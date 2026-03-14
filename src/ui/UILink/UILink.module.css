@@ -1,0 +1,28 @@
+.link {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+.colorWhite {
+  color: var(--white-color);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.colorWhite:hover {
+  opacity: 0.6;
+}
+
+.colorBlack {
+  opacity: 1;
+  color: var(--white-black);
+  transition: opacity 0.3s;
+}
+
+.colorBlack:hover {
+  opacity: 0.4;
+}
+
+.underline {
+  text-decoration: underline;
+}
