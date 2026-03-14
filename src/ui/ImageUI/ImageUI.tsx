@@ -7,20 +7,12 @@ import { ISlide } from '@/types';
 
 interface iImageUIProps {
   slide: ISlide;
-  index: number;
 }
 
-export const ImageUI = ({ slide, index }: iImageUIProps) => {
+export const ImageUI = ({ slide }: iImageUIProps) => {
   return (
     <>
-      <img
-        src={slide.url}
-        alt={slide.title}
-        // height={500}
-        // width={500}
-        // priority={index === 0}
-        className={styles.image}
-      />
+      <img src={slide.url} alt={slide.title} className={styles.image} />
       <div className={styles.info}>
         {!!slide.title && (
           <Htag color="white" size="medium" tag="h2">
