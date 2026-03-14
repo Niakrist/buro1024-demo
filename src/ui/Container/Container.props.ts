@@ -3,4 +3,5 @@ export interface IContainerProps extends React.DetailedHTMLProps<
   HTMLDivElement
 > {
   children: React.ReactNode;
+  className?: string;
 }
