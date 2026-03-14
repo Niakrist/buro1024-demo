@@ -1,9 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './Slider.module.css';
-import Image from 'next/image';
-import { Htag, Icon, ImageUI, Tag } from '@/ui';
+import { Icon, ImageUI, Tag } from '@/ui';
 import { slides } from '@/constants';
 
 export const Slider = () => {
@@ -28,7 +27,7 @@ export const Slider = () => {
             key={slide.url}
             className={`${styles.slideWrapper} ${index === currentIndex ? styles.active : ''}`}
           >
-            <ImageUI slide={slide} index={index} />
+            <ImageUI slide={slide} />
           </div>
         ))}
       </div>

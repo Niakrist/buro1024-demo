@@ -1,4 +1,4 @@
-import { Button, Container, Htag, ImageUI, UILink } from '@/ui';
+import { Container, GalleryContainer, Htag, ImageUI } from '@/ui';
 import styles from './page.module.css';
 import { Header, Slider } from '@/components';
 import { slides } from '@/constants';
@@ -17,25 +17,9 @@ export default function Home() {
           масштаба и сложности, соединяя эстетику, функциональность и характер
         </p>
       </Container>
-      <div className={styles.flex}>
-        <div className={styles.wrapper}>
-          <ImageUI slide={slides[1]} index={0} />
-        </div>
-        <div className={styles.wrapper}>
-          <ImageUI slide={slides[2]} index={0} />
-        </div>
-      </div>
-      <div className={styles.wrapperOne}>
-        <ImageUI slide={slides[4]} index={0} />
-      </div>
-      <div className={styles.flex}>
-        <div className={styles.wrapper}>
-          <ImageUI slide={slides[5]} index={0} />
-        </div>
-        <div className={styles.wrapper}>
-          <ImageUI slide={slides[6]} index={0} />
-        </div>
-      </div>
+      <GalleryContainer item1={slides[1]} item2={slides[2]} />
+      <GalleryContainer item1={slides[3]} />
+      <GalleryContainer item1={slides[4]} item2={slides[5]} />
     </div>
   );
 }
