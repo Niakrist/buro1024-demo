@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import styles from './Slider.module.css';
 import Image from 'next/image';
-import { Htag, Icon } from '@/ui';
+import { Htag, Icon, ImageUI, Tag } from '@/ui';
 import { slides } from '@/constants';
 
 export const Slider = () => {
@@ -28,29 +28,7 @@ export const Slider = () => {
             key={slide.url}
             className={`${styles.slideWrapper} ${index === currentIndex ? styles.active : ''}`}
           >
-            <Image
-              src={slide.url}
-              alt={slide.title}
-              fill
-              priority={index === 0}
-              className={styles.image}
-            />
-            <div className={styles.info}>
-              {!!slide.title && (
-                <Htag color="white" size="medium" tag="h2">
-                  {slide.title}
-                </Htag>
-              )}
-              {!!slide.tags && (
-                <ul className={styles.list}>
-                  {slide.tags.map((tag) => (
-                    <li className={styles.item} key={tag}>
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
+            <ImageUI slide={slide} index={index} />
           </div>
         ))}
       </div>
