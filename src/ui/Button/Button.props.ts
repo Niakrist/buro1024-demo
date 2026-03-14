@@ -4,7 +4,7 @@ export interface IButtonProps extends React.DetailedHTMLProps<
 > {
   color: 'black' | 'white';
   bg: 'black' | 'white';
-  size: 'small' | 'big' | 'full';
+  size?: 'small' | 'big' | 'full';
   children: React.ReactNode;
   fontWeight?: 'fv400' | 'fv500';
   className?: string;
