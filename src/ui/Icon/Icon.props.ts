@@ -1,0 +1,8 @@
+export interface IIconsProps extends React.SVGProps<SVGSVGElement> {
+  name: 'iconLogo';
+  className?: string;
+}
+
+export interface IIconProps extends React.SVGProps<SVGSVGElement> {
+  className?: string;
+}
