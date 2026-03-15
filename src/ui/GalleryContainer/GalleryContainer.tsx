@@ -7,11 +7,19 @@ export const GalleryContainer = ({
   item1,
   item2,
   item3,
+  vh,
   className,
 }: IGalleryContainerProps) => {
   if (item1 && item2 && item3) {
     return (
-      <div className={cn(styles.wrapper, className)}>
+      <div
+        className={cn(
+          styles.wrapper,
+          { [styles.vh100]: vh === 'vh100' },
+          { [styles.vh90]: vh === 'vh90' },
+          className,
+        )}
+      >
         <div className={styles.parent}>
           <ImageUI slide={item1} />
         </div>
@@ -25,7 +33,14 @@ export const GalleryContainer = ({
     );
   } else if (item1 && item2) {
     return (
-      <div className={cn(styles.wrapper, className)}>
+      <div
+        className={cn(
+          styles.wrapper,
+          { [styles.vh100]: vh === 'vh100' },
+          { [styles.vh90]: vh === 'vh90' },
+          className,
+        )}
+      >
         <div className={styles.parent}>
           <ImageUI slide={item1} />
         </div>
@@ -36,7 +51,14 @@ export const GalleryContainer = ({
     );
   } else if (item1) {
     return (
-      <div className={cn(styles.one, className)}>
+      <div
+        className={cn(
+          styles.one,
+          { [styles.vh100]: vh === 'vh100' },
+          { [styles.vh90]: vh === 'vh90' },
+          className,
+        )}
+      >
         <ImageUI slide={item1} />
       </div>
     );

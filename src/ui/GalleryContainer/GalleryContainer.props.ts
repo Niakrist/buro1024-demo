@@ -8,4 +8,5 @@ export interface IGalleryContainerProps extends React.DetailedHTMLProps<
   item2?: ISlide;
   item3?: ISlide;
   className?: string;
+  vh?: 'vh90' | 'vh100';
 }

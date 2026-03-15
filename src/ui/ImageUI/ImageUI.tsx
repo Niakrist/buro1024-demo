@@ -1,7 +1,4 @@
-import React from 'react';
-import { Htag } from '../Htag/Htag';
-import { Tag } from '../Tag/Tag';
-import Image from 'next/image';
+import { Tag, Htag } from '@/ui';
 import styles from './ImageUI.module.css';
 import { ISlide } from '@/types';
 
