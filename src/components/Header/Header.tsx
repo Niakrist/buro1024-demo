@@ -1,24 +1,18 @@
-import { MENU } from '@/constants';
-import { UILink, Icon, Button, Container } from '@/ui';
+import { UILink, Icon, Button } from '@/ui';
 
 import styles from './Header.module.css';
+import { IHeaderProps } from './Header.props';
+import cn from 'classnames';
 
-export const Header = () => {
+export const Header = ({ children, color, absolute = false }: IHeaderProps) => {
   return (
-    <header className={styles.header}>
-      <UILink color="white" href="/">
+    <header className={cn(styles.header, { [styles.absolute]: absolute })}>
+      <UILink color={color} href="/">
         <Icon name="iconLogo" />
       </UILink>
 
       <nav className={styles.nav}>
-        <ul className={styles.list}>
-          {MENU.map((item) => (
-            <UILink href={item.url} key={item.url} color="white">
-              {item.name}
-            </UILink>
-          ))}
-        </ul>
-
+        {children}
         <Button bg="black" color="white" size="small">
           Recreate
         </Button>
