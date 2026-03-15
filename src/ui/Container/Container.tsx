@@ -5,6 +5,21 @@ import { IContainerProps } from './Container.props';
 
 import cn from 'classnames';
 
-export const Container = ({ children, className }: IContainerProps) => {
-  return <div className={cn(styles.container, className)}>{children}</div>;
+export const Container = ({
+  className,
+  flex = false,
+  relative = false,
+  children,
+}: IContainerProps) => {
+  return (
+    <div
+      className={cn(
+        styles.container,
+        { [styles.flex]: flex, [styles.relative]: relative },
+        className,
+      )}
+    >
+      {children}
+    </div>
+  );
 };

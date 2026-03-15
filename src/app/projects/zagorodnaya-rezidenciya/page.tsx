@@ -1,10 +1,9 @@
-import { Container, GalleryContainer, Htag, NavMenu } from '@/ui';
-import { Header, Slider } from '@/components';
 import { slides } from '@/constants';
-
+import { Container, GalleryContainer, Htag, NavMenu } from '@/ui';
 import styles from './page.module.css';
+import { Header, Slider } from '@/components';
 
-export default function Home() {
+export default function ZagorodnayaRezidenciyaPage() {
   return (
     <div className={styles.page}>
       <Header absolute color="white">

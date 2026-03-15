@@ -4,4 +4,6 @@ export interface IContainerProps extends React.DetailedHTMLProps<
 > {
   children: React.ReactNode;
   className?: string;
+  flex?: boolean;
+  relative?: boolean;
 }

@@ -1,7 +1,6 @@
 .wrapper {
   margin-bottom: 80px;
   max-width: 100%;
-  height: 100vh;
   display: flex;
   gap: 4px;
 }
@@ -13,6 +12,13 @@
 .one {
   margin-bottom: 80px;
   width: 100%;
-  height: 100vh;
   position: relative;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.vh90 {
+  height: 50%;
 }
