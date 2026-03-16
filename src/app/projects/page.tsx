@@ -1,7 +1,8 @@
-import { slides } from '@/constants';
+// import { slides } from '@/constants';
 import { Container, GalleryContainer, NavMenu } from '@/ui';
 import styles from './page.module.css';
 import { Header } from '@/components';
+import { projects } from '@/data';
 
 export default function ProjectsPage() {
   return (
@@ -10,32 +11,40 @@ export default function ProjectsPage() {
         <NavMenu color="black" />
       </Header>
       <Container relative>
-        <GalleryContainer className={styles.mb} vh="vh100" item1={slides[0]} />
         <GalleryContainer
+          className={styles.mb}
           vh="vh100"
-          item1={slides[6]}
-          item2={slides[1]}
-          className={styles.wrapper}
-        />
-        <GalleryContainer vh="vh100" item1={slides[4]} />
-        <GalleryContainer
-          vh="vh100"
-          item1={slides[3]}
-          item2={slides[5]}
-          className={styles.wrapper}
-        />
-        <GalleryContainer className={styles.mb} vh="vh100" item1={slides[6]} />
-        <GalleryContainer
-          vh="vh100"
-          item1={slides[2]}
-          item2={slides[9]}
-          item3={slides[10]}
-          className={styles.wrapper}
+          item1={projects[0]}
         />
         <GalleryContainer
           vh="vh100"
-          item1={slides[7]}
-          item2={slides[5]}
+          item1={projects[1]}
+          item2={projects[2]}
+          className={styles.wrapper}
+        />
+        <GalleryContainer vh="vh100" item1={projects[5]} />
+        <GalleryContainer
+          vh="vh100"
+          item1={projects[4]}
+          item2={projects[6]}
+          className={styles.wrapper}
+        />
+        <GalleryContainer
+          className={styles.mb}
+          vh="vh100"
+          item1={projects[7]}
+        />
+        <GalleryContainer
+          vh="vh100"
+          item1={projects[3]}
+          item2={projects[11]}
+          item3={projects[12]}
+          className={styles.wrapper}
+        />
+        <GalleryContainer
+          vh="vh100"
+          item1={projects[8]}
+          item2={projects[6]}
           className={styles.wrapper}
         />
       </Container>
