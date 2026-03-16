@@ -1,24 +1,25 @@
 import { Tag, Htag } from '@/ui';
 import styles from './ImageUI.module.css';
-import { ISlide } from '@/types';
 
 interface iImageUIProps {
-  slide: ISlide;
+  img: string;
+  title?: string;
+  tags?: string[];
 }
 
-export const ImageUI = ({ slide }: iImageUIProps) => {
+export const ImageUI = ({ img, title, tags }: iImageUIProps) => {
   return (
     <>
-      <img src={slide.url} alt={slide.title} className={styles.image} />
+      <img src={img} alt={title} className={styles.image} />
       <div className={styles.info}>
-        {!!slide.title && (
+        {!!title && (
           <Htag color="white" size="medium" tag="h2">
-            {slide.title}
+            {title}
           </Htag>
         )}
-        {!!slide.tags && (
+        {!!tags && (
           <ul className={styles.list}>
-            {slide.tags.map((tag) => (
+            {tags.map((tag) => (
               <li className={styles.item} key={tag}>
                 <Tag>{tag}</Tag>
               </li>

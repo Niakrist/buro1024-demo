@@ -21,13 +21,13 @@ export const GalleryContainer = ({
         )}
       >
         <div className={styles.parent}>
-          <ImageUI slide={item1} />
+          <ImageUI img={item1.img} tags={item1.tags} title={item1.title} />
         </div>
         <div className={styles.parent}>
-          <ImageUI slide={item2} />
+          <ImageUI img={item2.img} tags={item2.tags} title={item2.title} />
         </div>
         <div className={styles.parent}>
-          <ImageUI slide={item3} />
+          <ImageUI img={item3.img} tags={item3.tags} title={item3.title} />
         </div>
       </div>
     );
@@ -42,10 +42,10 @@ export const GalleryContainer = ({
         )}
       >
         <div className={styles.parent}>
-          <ImageUI slide={item1} />
+          <ImageUI img={item1.img} tags={item1.tags} title={item1.title} />
         </div>
         <div className={styles.parent}>
-          <ImageUI slide={item2} />
+          <ImageUI img={item2.img} tags={item2.tags} title={item2.title} />
         </div>
       </div>
     );
@@ -59,7 +59,7 @@ export const GalleryContainer = ({
           className,
         )}
       >
-        <ImageUI slide={item1} />
+        <ImageUI img={item1.img} tags={item1.tags} title={item1.title} />
       </div>
     );
   }

@@ -1,16 +1,17 @@
 import { Container, GalleryContainer, Htag, NavMenu } from '@/ui';
 import { Header, Slider } from '@/components';
-import { slides } from '@/constants';
-
+import { projects } from '@/data';
+import { adapterSlider } from '@/utils';
 import styles from './page.module.css';
 
 export default function Home() {
+  const slides = adapterSlider(projects);
   return (
     <div className={styles.page}>
       <Header absolute color="white">
         <NavMenu color="white" />
       </Header>
-      <Slider />
+      <Slider slides={slides} />
       <Container className={styles.container}>
         <Htag className={styles.title} color="black" tag="h2" size="medium">
           Уникальные пространства для уникальных людей
@@ -20,9 +21,9 @@ export default function Home() {
           масштаба и сложности, соединяя эстетику, функциональность и характер
         </p>
       </Container>
-      <GalleryContainer vh="vh100" item1={slides[6]} item2={slides[1]} />
-      <GalleryContainer vh="vh100" item1={slides[4]} />
-      <GalleryContainer vh="vh100" item1={slides[3]} item2={slides[5]} />
+      <GalleryContainer vh="vh100" item1={projects[1]} item2={projects[2]} />
+      <GalleryContainer vh="vh100" item1={projects[5]} />
+      <GalleryContainer vh="vh100" item1={projects[4]} item2={projects[6]} />
     </div>
   );
 }

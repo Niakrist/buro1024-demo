@@ -2,10 +2,10 @@
 
 import { useState } from 'react';
 import styles from './Slider.module.css';
-import { Icon, ImageUI, Tag } from '@/ui';
-import { slides } from '@/constants';
+import { Icon, ImageUI } from '@/ui';
+import { ISlideProps } from './Slider.props';
 
-export const Slider = () => {
+export const Slider = ({ slides }: ISlideProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
@@ -22,14 +22,17 @@ export const Slider = () => {
       </button>
 
       <div className={styles.sliderContainer}>
-        {slides.map((slide, index) => (
-          <div
-            key={slide.url}
-            className={`${styles.slideWrapper} ${index === currentIndex ? styles.active : ''}`}
-          >
-            <ImageUI slide={slide} />
-          </div>
-        ))}
+        {slides.map((slide, index) => {
+          console.log('slide: ', slide);
+          return (
+            <div
+              key={slide.img}
+              className={`${styles.slideWrapper} ${index === currentIndex ? styles.active : ''}`}
+            >
+              <ImageUI img={slide.img} title={slide.title} tags={slide.tags} />
+            </div>
+          );
+        })}
       </div>
 
       <button onClick={goToNext} className={styles.nextButton}>
