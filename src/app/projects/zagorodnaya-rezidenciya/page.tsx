@@ -1,11 +1,26 @@
 import { Container, GalleryContainer, Htag, NavMenu } from '@/ui';
 import styles from './page.module.css';
-import { Header, Slider } from '@/components';
+import { Content, Header, Slider } from '@/components';
 import { projects } from '@/data';
 import { adapterSliderForProject } from '@/utils';
+import { IProject } from '@/types';
 
 export default function ZagorodnayaRezidenciyaPage() {
   const slides = adapterSliderForProject(projects[0]);
+  const adapterContent = (project: IProject) => {
+    return {
+      title: project.title,
+      description: project.description,
+      tags: project.tags,
+    };
+  };
+
+  const content = adapterContent(projects[0]);
+
+  const gallery = projects[0].gallery.reduce((arr, item) => {
+    arr.push({ img: item });
+    return arr;
+  }, []);
 
   return (
     <div className={styles.page}>
@@ -13,18 +28,14 @@ export default function ZagorodnayaRezidenciyaPage() {
         <NavMenu color="white" />
       </Header>
       <Slider slides={slides} />
-      <Container className={styles.container}>
-        <Htag className={styles.title} color="black" tag="h2" size="medium">
-          Уникальные пространства для уникальных людей
-        </Htag>
-        <p className={styles.text}>
-          От интерьера до архитектуры и среды — мы создаём проекты разного
-          масштаба и сложности, соединяя эстетику, функциональность и характер
-        </p>
-      </Container>
-      <GalleryContainer vh="vh100" item1={projects[6]} item2={projects[1]} />
-      <GalleryContainer vh="vh100" item1={projects[4]} />
-      <GalleryContainer vh="vh100" item1={projects[3]} item2={projects[5]} />
+      <Content
+        title={content.title}
+        description={content.description}
+        tags={content.tags}
+      />
+      <GalleryContainer vh="vh100" item1={gallery[0]} />
+      <GalleryContainer vh="vh100" item1={gallery[1]} />
+      <GalleryContainer vh="vh100" item1={gallery[2]} />
     </div>
   );
 }
