@@ -6,4 +6,5 @@ export interface IContainerProps extends React.DetailedHTMLProps<
   className?: string;
   flex?: boolean;
   relative?: boolean;
+  align?: 'center';
 }
