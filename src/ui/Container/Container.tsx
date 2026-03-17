@@ -8,6 +8,7 @@ import cn from 'classnames';
 export const Container = ({
   className,
   flex = false,
+  align,
   relative = false,
   children,
 }: IContainerProps) => {
@@ -15,7 +16,12 @@ export const Container = ({
     <div
       className={cn(
         styles.container,
-        { [styles.flex]: flex, [styles.relative]: relative },
+        {
+          [styles.flex]: flex,
+          [styles.relative]: relative,
+          [styles.alignCenter]: align === 'center',
+        },
+
         className,
       )}
     >

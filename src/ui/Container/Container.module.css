@@ -5,11 +5,14 @@
 }
 .flex {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 .relative {
   position: relative;
   /* max-width: 1840px; */
+}
+
+.alignCenter {
+  align-items: center;
 }
