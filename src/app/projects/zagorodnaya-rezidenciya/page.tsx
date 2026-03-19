@@ -1,26 +1,17 @@
-import { Container, GalleryContainer, Htag, NavMenu } from '@/ui';
+import { Container, ImgContainer, NavMenu } from '@/ui';
 import styles from './page.module.css';
 import { Content, Header, Slider } from '@/components';
 import { projects } from '@/data';
-import { adapterSliderForProject } from '@/utils';
-import { IProject } from '@/types';
+import {
+  adapterContent,
+  adapterGallery,
+  adapterSliderForProject,
+} from '@/utils';
 
 export default function ZagorodnayaRezidenciyaPage() {
-  const slides = adapterSliderForProject(projects[0]);
-  const adapterContent = (project: IProject) => {
-    return {
-      title: project.title,
-      description: project.description,
-      tags: project.tags,
-    };
-  };
-
-  const content = adapterContent(projects[0]);
-
-  const gallery = projects[0].gallery.reduce((arr, item) => {
-    arr.push({ img: item });
-    return arr;
-  }, []);
+  const slides = adapterSliderForProject(projects[1]);
+  const content = adapterContent(projects[1]);
+  const gallery = adapterGallery(projects[1]);
 
   return (
     <div className={styles.page}>
@@ -33,9 +24,17 @@ export default function ZagorodnayaRezidenciyaPage() {
         description={content.description}
         tags={content.tags}
       />
-      <GalleryContainer vh="vh100" item1={gallery[0]} />
-      <GalleryContainer vh="vh100" item1={gallery[1]} />
-      <GalleryContainer vh="vh100" item1={gallery[2]} />
+      <Container className={styles.mb63}>
+        <ImgContainer item1={gallery[0]} item2={gallery[1]} />
+        <ImgContainer item1={gallery[2]} />
+        <ImgContainer item1={gallery[3]} item2={gallery[4]} />
+        <ImgContainer item1={gallery[5]} />
+        <ImgContainer
+          item1={gallery[6]}
+          item2={gallery[7]}
+          item3={gallery[8]}
+        />
+      </Container>
     </div>
   );
 }
