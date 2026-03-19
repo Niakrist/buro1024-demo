@@ -23,7 +23,6 @@ export const Slider = ({ slides }: ISlideProps) => {
 
       <div className={styles.sliderContainer}>
         {slides.map((slide, index) => {
-          console.log('slide: ', slide);
           return (
             <div
               key={slide.img}

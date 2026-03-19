@@ -8,6 +8,7 @@ export const GalleryContainer = ({
   item2,
   item3,
   vh,
+  mb = 'big',
   className,
 }: IGalleryContainerProps) => {
   if (item1 && item2 && item3) {
@@ -17,6 +18,8 @@ export const GalleryContainer = ({
           styles.wrapper,
           { [styles.vh100]: vh === 'vh100' },
           { [styles.vh90]: vh === 'vh90' },
+          { [styles.smallMb]: mb === 'small' },
+          { [styles.bigMb]: mb === 'big' },
           className,
         )}
       >
@@ -38,6 +41,8 @@ export const GalleryContainer = ({
           styles.wrapper,
           { [styles.vh100]: vh === 'vh100' },
           { [styles.vh90]: vh === 'vh90' },
+          { [styles.smallMb]: mb === 'small' },
+          { [styles.bigMb]: mb === 'big' },
           className,
         )}
       >
@@ -56,6 +61,8 @@ export const GalleryContainer = ({
           styles.one,
           { [styles.vh100]: vh === 'vh100' },
           { [styles.vh90]: vh === 'vh90' },
+          { [styles.smallMb]: mb === 'small' },
+          { [styles.bigMb]: mb === 'big' },
           className,
         )}
       >

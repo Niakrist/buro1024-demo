@@ -7,3 +7,4 @@ export { Tag } from './Tag/Tag';
 export { ImageUI } from './ImageUI/ImageUI';
 export { GalleryContainer } from './GalleryContainer/GalleryContainer';
 export { NavMenu } from './NavMenu/NavMenu';
+export { ImgContainer } from './ImgContainer/ImgContainer';
