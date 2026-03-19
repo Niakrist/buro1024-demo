@@ -1,5 +1,4 @@
 .wrapper {
-  margin-bottom: 80px;
   max-width: 100%;
   display: flex;
   gap: 4px;
@@ -21,4 +20,12 @@
 
 .vh90 {
   height: 50%;
+}
+
+.smallMb {
+  margin-bottom: 4px;
+}
+
+.bigMb {
+  margin-bottom: 80px;
 }
