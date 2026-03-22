@@ -8,10 +8,10 @@ import {
   adapterSliderForProject,
 } from '@/utils';
 
-export default function ChastnyyDomVMyaglovoPage() {
-  const slides = adapterSliderForProject(projects[5]);
-  const content = adapterContent(projects[5]);
-  const gallery = adapterGallery(projects[5]);
+export default function ZagorodnayaRezidenciyaPage() {
+  const slides = adapterSliderForProject(projects[11]);
+  const content = adapterContent(projects[11]);
+  const gallery = adapterGallery(projects[11]);
 
   return (
     <div className={styles.page}>
@@ -26,7 +26,8 @@ export default function ChastnyyDomVMyaglovoPage() {
       />
       <Container className={styles.mb63}>
         <ImgContainer item1={gallery[0]} />
-        <ImgContainer item1={gallery[1]} />
+        <ImgContainer item1={gallery[1]} item2={gallery[2]} />
+        <ImgContainer item1={gallery[3]} />
       </Container>
     </div>
   );

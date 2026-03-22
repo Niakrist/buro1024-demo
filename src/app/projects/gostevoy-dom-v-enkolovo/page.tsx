@@ -8,7 +8,7 @@ import {
   adapterSliderForProject,
 } from '@/utils';
 
-export default function ZagorodnayaRezidenciyaPage() {
+export default function GostevoyDomVEnkolovoPage() {
   const slides = adapterSliderForProject(projects[8]);
   const content = adapterContent(projects[8]);
   const gallery = adapterGallery(projects[8]);
