@@ -1,3 +1,5 @@
+import { URL } from '@/constants';
+
 const obj = {
   '0': 're-039',
   '1': 're-017',
@@ -31,6 +33,7 @@ export const projects = [
       '260 м²',
     ],
     gallery: ['/re-039-1.jpg', '/re-039-2.jpg', '/re-039-3.jpg'],
+    url: URL.ChastnyyDomVRoshchino,
   },
   {
     name: 're-017',
@@ -53,6 +56,7 @@ export const projects = [
       '/re-017-8.jpg',
       '/re-017-9.jpg',
     ],
+    url: URL.zagorodnayaRezidenciya,
   },
   {
     name: 're-9770',
@@ -74,6 +78,7 @@ export const projects = [
       '/re-9770-6.jpg',
       '/re-9770-7.jpg',
     ],
+    url: URL.domVLA,
   },
   {
     name: 're-011',
@@ -91,6 +96,7 @@ export const projects = [
       '/re-011-3.jpg',
       '/re-011-4.jpg',
     ],
+    url: URL.koncepciyaBlagoustroystvaZhk,
   },
   {
     name: 're-018',
@@ -114,6 +120,7 @@ export const projects = [
       '/re-018-9.jpg',
       '/re-018-10.jpg',
     ],
+    url: URL.domVLenOblastiDubrovka,
   },
   {
     name: 're-01',
@@ -131,6 +138,7 @@ export const projects = [
       '146 м²',
     ],
     gallery: ['/re-01-1.jpg', '/re-01-2.jpg'],
+    url: URL.chastnyyDomVMyaglovo,
   },
   {
     name: 're-012',
@@ -154,6 +162,7 @@ export const projects = [
       '/re-012-9.jpg',
       '/re-012-10.jpg',
     ],
+    url: URL.apartamenty,
   },
   {
     name: 're-059',
@@ -179,6 +188,7 @@ export const projects = [
       '/re-059-11.jpg',
       '/re-059-12.jpg',
     ],
+    url: URL.chastnyyDomVEnkolovo,
   },
   {
     name: 're-059a',
@@ -212,6 +222,7 @@ export const projects = [
       '/re-059a-19.jpg',
       '/re-059a-20.jpg',
     ],
+    url: URL.gostevoyDomVEnkolovo,
   },
   {
     name: 're-0',
@@ -232,6 +243,7 @@ export const projects = [
       '/re-0-6.jpg',
       '/re-0-7.jpg',
     ],
+    url: URL.otelVSochi,
   },
   {
     name: 're-s',
@@ -256,6 +268,7 @@ export const projects = [
       '/re-s-10.jpg',
       '/re-s-11.jpg',
     ],
+    url: URL.otelVSochi,
   },
   {
     name: 're-016',
@@ -273,6 +286,7 @@ export const projects = [
       '/re-016-3.jpg',
       '/re-016-4.jpg',
     ],
+    url: URL.blagoustroystvoDvoraVCentrePeterburga,
   },
   {
     name: 're-00',
@@ -285,5 +299,6 @@ export const projects = [
     ],
     tags: ['Интерьер', 'Ленинградская область', '2021 год', '240 м²'],
     gallery: ['/re-00-1.jpg', '/re-00-2.jpg', '/re-00-3.jpg'],
+    url: URL.kafeMagazinLamberi,
   },
 ];

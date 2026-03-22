@@ -2,6 +2,7 @@ import { ImageUI } from '@/ui';
 import styles from './GalleryContainer.module.css';
 import cn from 'classnames';
 import { IGalleryContainerProps } from './GalleryContainer.props';
+import Link from 'next/link';
 
 export const GalleryContainer = ({
   item1,
@@ -23,15 +24,15 @@ export const GalleryContainer = ({
           className,
         )}
       >
-        <div className={styles.parent}>
+        <Link href={`${item1.url}`} className={styles.parent}>
           <ImageUI img={item1.img} tags={item1.tags} title={item1.title} />
-        </div>
-        <div className={styles.parent}>
+        </Link>
+        <Link href={`${item2.url}`} className={styles.parent}>
           <ImageUI img={item2.img} tags={item2.tags} title={item2.title} />
-        </div>
-        <div className={styles.parent}>
+        </Link>
+        <Link href={`${item3.url}`} className={styles.parent}>
           <ImageUI img={item3.img} tags={item3.tags} title={item3.title} />
-        </div>
+        </Link>
       </div>
     );
   } else if (item1 && item2) {
@@ -46,17 +47,18 @@ export const GalleryContainer = ({
           className,
         )}
       >
-        <div className={styles.parent}>
+        <Link href={`${item1.url}`} className={styles.parent}>
           <ImageUI img={item1.img} tags={item1.tags} title={item1.title} />
-        </div>
-        <div className={styles.parent}>
+        </Link>
+        <Link href={`${item2.url}`} className={styles.parent}>
           <ImageUI img={item2.img} tags={item2.tags} title={item2.title} />
-        </div>
+        </Link>
       </div>
     );
   } else if (item1) {
     return (
-      <div
+      <Link
+        href={`${item1.url}`}
         className={cn(
           styles.one,
           { [styles.vh100]: vh === 'vh100' },
@@ -67,7 +69,7 @@ export const GalleryContainer = ({
         )}
       >
         <ImageUI img={item1.img} tags={item1.tags} title={item1.title} />
-      </div>
+      </Link>
     );
   }
 };
