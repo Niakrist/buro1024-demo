@@ -15,7 +15,7 @@ export const UILink = ({
 }: IUILinkProps) => {
   return (
     <Link
-      href={href}
+      href={`/${href}`}
       className={cn(
         styles.link,
         {
