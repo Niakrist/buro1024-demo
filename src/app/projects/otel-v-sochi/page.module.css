@@ -2,10 +2,13 @@
   position: relative;
 }
 
+.mb20 {
+  margin-bottom: 20px;
+}
+
 .mb80 {
   margin-bottom: 80px;
 }
-
 .mb160 {
   margin-bottom: 160px;
 }
