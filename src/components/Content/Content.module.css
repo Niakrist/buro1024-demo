@@ -22,8 +22,6 @@
   margin-top: 8px;
 }
 
-.tagList {
-  padding: 16px 0;
-  display: flex;
-  gap: 16px;
+.mt16 {
+  margin-top: 16px;
 }

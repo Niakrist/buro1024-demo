@@ -1,6 +1,6 @@
-import { Container, ImgContainer, NavMenu } from '@/ui';
+import { Container, Htag, ImgContainer, NavMenu } from '@/ui';
 import styles from './page.module.css';
-import { Content, Header, Slider } from '@/components';
+import { Content, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -47,6 +47,12 @@ export default function GostevoyDomVEnkolovoPage() {
         <ImgContainer item1={gallery[15]} item2={gallery[16]} />
         <ImgContainer item1={gallery[17]} item2={gallery[18]} />
         <ImgContainer item1={gallery[19]} />
+      </Container>
+      <Container>
+        <Htag color="black" size="big" tag="h2" className={styles.mb40}>
+          Другие проекты
+        </Htag>
+        <Recommendations projects={projects} />
       </Container>
     </div>
   );
