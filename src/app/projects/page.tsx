@@ -1,4 +1,3 @@
-// import { slides } from '@/constants';
 import { Container, GalleryContainer, NavMenu } from '@/ui';
 import styles from './page.module.css';
 import { Header } from '@/components';

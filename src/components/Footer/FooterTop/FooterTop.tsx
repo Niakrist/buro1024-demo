@@ -7,6 +7,10 @@ export const FooterTop = () => {
     <Container flex className={styles.margin}>
       <div className={styles.left}>
         <Icon name="iconLogo" />
+        <div className={styles.iconGroup}>
+          <Icon name="iconRespace" />
+          <Icon name="iconArchitects" />
+        </div>
         <p className={styles.text}>
           Уникальные пространства для уникальных людей
         </p>
