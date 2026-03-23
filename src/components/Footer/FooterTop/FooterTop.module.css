@@ -24,3 +24,11 @@
   font-size: 16px;
   color: var(--black-color);
 }
+
+.iconGroup {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--black-color);
+}
