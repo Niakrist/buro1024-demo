@@ -1,6 +1,6 @@
-import { Container, ImgContainer, NavMenu } from '@/ui';
+import { Container, Htag, ImgContainer, NavMenu } from '@/ui';
 import styles from './page.module.css';
-import { Content, Header, Slider } from '@/components';
+import { Content, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -29,6 +29,12 @@ export default function LAPage() {
         <ImgContainer item1={gallery[2]} item2={gallery[3]} />
         <ImgContainer item1={gallery[4]} item2={gallery[5]} />
         <ImgContainer item1={gallery[6]} />
+      </Container>
+      <Container>
+        <Htag color="black" size="big" tag="h2" className={styles.mb40}>
+          Другие проекты
+        </Htag>
+        <Recommendations projects={projects} />
       </Container>
     </div>
   );

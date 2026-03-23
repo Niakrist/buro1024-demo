@@ -1,6 +1,6 @@
 import { Container, DropDown, Htag, ImgContainer, NavMenu } from '@/ui';
 import styles from './page.module.css';
-import { Content, Header, Slider } from '@/components';
+import { Content, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -59,6 +59,12 @@ export default function OtelVSochiPage() {
       </Container>
       <Container className={styles.mb160}>
         <DropDown name="Технические планы проекта" />
+      </Container>
+      <Container>
+        <Htag color="black" size="big" tag="h2" className={styles.mb40}>
+          Другие проекты
+        </Htag>
+        <Recommendations projects={projects} />
       </Container>
     </div>
   );

@@ -1,5 +1,5 @@
 import { IContentProps } from './Content.props';
-import { Container, Htag, Tag } from '@/ui';
+import { Container, Htag, TagList } from '@/ui';
 
 import styles from './Content.module.css';
 export const Content = ({ title, description, tags }: IContentProps) => {
@@ -17,11 +17,12 @@ export const Content = ({ title, description, tags }: IContentProps) => {
           ))}
         </div>
       </div>
-      <ul className={styles.tagList}>
+      <TagList tags={tags} className={styles.mt16} color="black" />
+      {/* <ul className={styles.tagList}>
         {tags.map((tag) => (
           <Tag key={tag}>{tag}</Tag>
         ))}
-      </ul>
+      </ul> */}
     </Container>
   );
 };
