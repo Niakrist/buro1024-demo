@@ -1,5 +1,11 @@
 export interface IIconsProps extends React.SVGProps<SVGSVGElement> {
-  name: 'iconLogo' | 'iconArrowLeft' | 'iconArrowRight' | 'iconArrowDown';
+  name:
+    | 'iconLogo'
+    | 'iconArrowLeft'
+    | 'iconArrowRight'
+    | 'iconArrowDown'
+    | 'iconRespace'
+    | 'iconArchitects';
   className?: string;
 }
 

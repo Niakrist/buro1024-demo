@@ -8,7 +8,7 @@ interface IHtagProps {
   tag: 'h1' | 'h2' | 'h3';
   children: React.ReactNode;
   color: 'white' | 'black';
-  size: 'medium' | 'big';
+  size: 'small' | 'medium' | 'big';
   className?: string;
   hidden?: boolean;
 }
@@ -31,6 +31,7 @@ export const Htag = ({
             {
               [styles.whiteColor]: color === 'white',
               [styles.blaclColor]: color === 'black',
+              [styles.small]: size === 'small',
               [styles.medium]: size === 'medium',
               [styles.big]: size === 'big',
               [styles.hidden]: hidden === true,
@@ -50,6 +51,7 @@ export const Htag = ({
             {
               [styles.whiteColor]: color === 'white',
               [styles.blaclColor]: color === 'black',
+              [styles.small]: size === 'small',
               [styles.medium]: size === 'medium',
               [styles.big]: size === 'big',
               [styles.hidden]: hidden === true,
@@ -69,6 +71,7 @@ export const Htag = ({
             {
               [styles.whiteColor]: color === 'white',
               [styles.blaclColor]: color === 'black',
+              [styles.small]: size === 'small',
               [styles.medium]: size === 'medium',
               [styles.big]: size === 'big',
               [styles.hidden]: hidden === true,
