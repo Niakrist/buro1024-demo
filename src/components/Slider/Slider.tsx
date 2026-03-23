@@ -18,7 +18,7 @@ export const Slider = ({ slides }: ISlideProps) => {
   return (
     <section className={styles.sliderSection}>
       <button onClick={goToPrevious} className={styles.prevButton}>
-        <Icon name="IconArrowLeft" />
+        <Icon name="iconArrowLeft" />
       </button>
 
       <div className={styles.sliderContainer}>
@@ -35,7 +35,7 @@ export const Slider = ({ slides }: ISlideProps) => {
       </div>
 
       <button onClick={goToNext} className={styles.nextButton}>
-        <Icon name="IconArrowRight" />
+        <Icon name="iconArrowRight" />
       </button>
     </section>
   );
