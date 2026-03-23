@@ -8,10 +8,10 @@ import {
   adapterSliderForProject,
 } from '@/utils';
 
-export default function LAPage() {
-  const slides = adapterSliderForProject(projects[2]);
-  const content = adapterContent(projects[2]);
-  const gallery = adapterGallery(projects[2]);
+export default function ChastnyyDomVEnkolovoPage() {
+  const slides = adapterSliderForProject(projects[7]);
+  const content = adapterContent(projects[7]);
+  const gallery = adapterGallery(projects[7]);
 
   return (
     <div className={styles.page}>
@@ -26,9 +26,16 @@ export default function LAPage() {
       />
       <Container className={styles.mb160}>
         <ImgContainer item1={gallery[0]} item2={gallery[1]} />
-        <ImgContainer item1={gallery[2]} item2={gallery[3]} />
-        <ImgContainer item1={gallery[4]} item2={gallery[5]} />
-        <ImgContainer item1={gallery[6]} />
+        <ImgContainer
+          item1={gallery[2]}
+          item2={gallery[3]}
+          item3={gallery[4]}
+        />
+        <ImgContainer item1={gallery[5]} item2={gallery[6]} />
+        <ImgContainer item1={gallery[7]} item2={gallery[8]} />
+        <ImgContainer item1={gallery[9]} />
+        <ImgContainer item1={gallery[12]} />
+        <ImgContainer item1={gallery[10]} item2={gallery[11]} />
       </Container>
     </div>
   );

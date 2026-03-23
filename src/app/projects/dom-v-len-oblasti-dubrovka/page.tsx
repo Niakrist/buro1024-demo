@@ -1,4 +1,4 @@
-import { Container, DropDown, ImgContainer, NavMenu } from '@/ui';
+import { Container, ImgContainer, NavMenu } from '@/ui';
 import styles from './page.module.css';
 import { Content, Header, Slider } from '@/components';
 import { projects } from '@/data';
@@ -24,7 +24,7 @@ export default function DomVLenOblastiDubrovkaPage() {
         description={content.description}
         tags={content.tags}
       />
-      <Container className={styles.mb63}>
+      <Container className={styles.mb160}>
         <ImgContainer item1={gallery[0]} item2={gallery[1]} />
         <ImgContainer item1={gallery[2]} item2={gallery[3]} />
         <ImgContainer item1={gallery[4]} item2={gallery[6]} />

@@ -187,6 +187,7 @@ export const projects = [
       '/re-059-10.jpg',
       '/re-059-11.jpg',
       '/re-059-12.jpg',
+      '/re-059-13.jpg',
     ],
     url: URL.chastnyyDomVEnkolovo,
   },
