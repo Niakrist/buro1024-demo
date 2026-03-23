@@ -1,4 +1,4 @@
-import { GalleryContainer, NavMenu } from '@/ui';
+import { Container, DropDown, ImgContainer, NavMenu } from '@/ui';
 import styles from './page.module.css';
 import { Content, Header, Slider } from '@/components';
 import { projects } from '@/data';
@@ -24,14 +24,14 @@ export default function ChastnyyDomVRoshchinoPage() {
         description={content.description}
         tags={content.tags}
       />
-      <GalleryContainer vh="vh100" mb="small" item1={gallery[0]} />
-      <GalleryContainer vh="vh100" mb="small" item1={gallery[1]} />
-      <GalleryContainer
-        vh="vh100"
-        mb="small"
-        item1={gallery[2]}
-        className={styles.mb63}
-      />
+      <Container className={styles.mb80}>
+        <ImgContainer item1={gallery[0]} />
+        <ImgContainer item1={gallery[1]} />
+        <ImgContainer item1={gallery[2]} />
+      </Container>
+      <Container className={styles.mb160}>
+        <DropDown name="Технические планы проекта" />
+      </Container>
     </div>
   );
 }

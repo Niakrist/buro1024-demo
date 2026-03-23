@@ -8,3 +8,4 @@ export { ImageUI } from './ImageUI/ImageUI';
 export { GalleryContainer } from './GalleryContainer/GalleryContainer';
 export { NavMenu } from './NavMenu/NavMenu';
 export { ImgContainer } from './ImgContainer/ImgContainer';
+export { DropDown } from './DropDown/DropDown';

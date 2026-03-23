@@ -1,4 +1,4 @@
-import { Container, ImgContainer, NavMenu } from '@/ui';
+import { Container, DropDown, ImgContainer, NavMenu } from '@/ui';
 import styles from './page.module.css';
 import { Content, Header, Slider } from '@/components';
 import { projects } from '@/data';
@@ -8,7 +8,7 @@ import {
   adapterSliderForProject,
 } from '@/utils';
 
-export default function ZagorodnayaRezidenciyaPage() {
+export default function BlagoustroystvoDvoraVCentrePeterburgaPage() {
   const slides = adapterSliderForProject(projects[11]);
   const content = adapterContent(projects[11]);
   const gallery = adapterGallery(projects[11]);
