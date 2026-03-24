@@ -1,1 +1,111 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Flex:regular);
+/* Roboto Flex Regular */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-flex-v30-cyrillic_cyrillic-ext_latin-regular.woff2')
+    format('woff2');
+}
+
+/*
+Roboto Flex Medium
+Roboto Flex Medium
+Roboto Flex Medium
+*/
+
+/* 
+Architexture Regular
+Architexture Regular
+Architexture Regular
+*/
+
+/*
+Faberge Regular
+Faberge Regular
+Faberge Regular
+*/
+
+/*
+Faberge Italic
+Faberge Italic
+Faberge Italic
+*/
+
+/* Cormorant Infant */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cormorant Infant';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cormorant-infant-v22-cyrillic_cyrillic-ext_latin-regular.woff2')
+    format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* 
+SF Pro Text Semibold
+SF Pro Text Semibold
+SF Pro Text Semibold
+*/
+
+/*
+Golos UI Regular
+Golos UI Regular
+Golos UI Regular
+*/
+
+/* Inter Tight Regular*/
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-tight-v9-cyrillic_cyrillic-ext_latin-regular.woff2')
+    format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Inter Tight Medium */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-tight-v9-cyrillic_cyrillic-ext_latin-500.woff2')
+    format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Golos Text Regular */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/golos-text-v7-cyrillic_cyrillic-ext_latin-regular.woff2')
+    format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* EB Garamond Medium Italic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/eb-garamond-v32-cyrillic_cyrillic-ext_latin-500italic.woff2')
+    format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Caveat Regular */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/caveat-v23-cyrillic_cyrillic-ext_latin-regular.woff2')
+    format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*
+Chair 406 Regular
+Chair 406 Regular
+Chair 406 Regular
+*/
