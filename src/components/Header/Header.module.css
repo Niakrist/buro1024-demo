@@ -18,3 +18,7 @@
   position: absolute;
   left: 0;
 }
+
+.link {
+  font-size: 0;
+}
