@@ -1,0 +1,21 @@
+.big {
+  width: 100%;
+  max-height: auto;
+  position: relative;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mb32 {
+  margin-bottom: 32px;
+}
+
+.content {
+  max-width: 800px;
+  left: 40px;
+  bottom: 26px;
+  position: absolute;
+  z-index: 5;
+}

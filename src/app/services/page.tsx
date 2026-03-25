@@ -1,7 +1,7 @@
-import { Container, GalleryContainer, Htag, NavMenu, UILink } from '@/ui';
+import { Container, Htag, NavMenu, UILink } from '@/ui';
 import styles from './page.module.css';
 import { Header } from '@/components';
-import { projects, SERVICES_DATA } from '@/data';
+import { SERVICES_DATA } from '@/data';
 
 export default function ServicesPage() {
   return (

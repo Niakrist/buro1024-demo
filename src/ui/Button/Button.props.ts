@@ -8,4 +8,6 @@ export interface IButtonProps extends React.DetailedHTMLProps<
   children: React.ReactNode;
   fontWeight?: 'fv400' | 'fv500';
   className?: string;
+  href?: string;
+  uppercase?: boolean;
 }
