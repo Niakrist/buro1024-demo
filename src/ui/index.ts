@@ -9,3 +9,4 @@ export { NavMenu } from './NavMenu/NavMenu';
 export { ImgContainer } from './ImgContainer/ImgContainer';
 export { DropDown } from './DropDown/DropDown';
 export { TagList } from './TagList/TagList';
+export { Text } from './Text/Text';
