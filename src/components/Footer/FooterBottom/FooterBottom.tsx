@@ -13,13 +13,16 @@ export const FooterBottom = () => {
           <li className={styles.item}>{REQUISITES.ogrnip}</li>
         </ul>
         <ul className={styles.list}>
-          {OFFICIAL.map((item) => (
-            <li key={item.url}>
-              <UILink color="black" size="small" href={item.url}>
-                {item.name}
-              </UILink>
-            </li>
-          ))}
+          {OFFICIAL.map(
+            (item) =>
+              !!item.isShow && (
+                <li key={item.url}>
+                  <UILink color="black" size="small" href={item.url}>
+                    {item.name}
+                  </UILink>
+                </li>
+              ),
+          )}
         </ul>
       </div>
 
