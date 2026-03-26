@@ -2,7 +2,7 @@ import { Container, Htag, NavMenu, Text } from '@/ui';
 import styles from './page.module.css';
 import { Header } from '@/components';
 
-export default function AboutPage() {
+export default function PrivacyPolicyPage() {
   return (
     <>
       <Header color="black">
@@ -612,7 +612,7 @@ export default function AboutPage() {
           ее новой версией.
         </Text>
 
-        <Text color="black" size="medium" className={styles.mb8}>
+        <Text color="black" size="medium">
           14.2. Оператор оставляет за собой право вносить изменения в настоящую
           Политику. Изменения (изъятия, дополнения и др.) вносятся путем издания
           новой редакции настоящей Политики. Новая редакция Политики вступает в

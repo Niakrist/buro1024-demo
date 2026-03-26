@@ -1,0 +1,21 @@
+.container {
+  padding-top: 42px;
+  margin: 0 0 160px;
+  max-width: 900px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.fw700 {
+  font-weight: 700;
+}
