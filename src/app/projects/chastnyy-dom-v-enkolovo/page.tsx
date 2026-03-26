@@ -1,12 +1,13 @@
-import { Container, Htag, ImgContainer, NavMenu } from '@/ui';
-import styles from './page.module.css';
-import { Content, Header, Recommendations, Slider } from '@/components';
+import { Container, Htag, ImgContainer } from '@/ui';
+import { Content, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
   adapterGallery,
   adapterSliderForProject,
 } from '@/utils';
+import styles from '../page.module.css';
+import cn from 'classnames';
 
 export default function ChastnyyDomVEnkolovoPage() {
   const slides = adapterSliderForProject(projects[7]);
@@ -14,17 +15,14 @@ export default function ChastnyyDomVEnkolovoPage() {
   const gallery = adapterGallery(projects[7]);
 
   return (
-    <div className={styles.page}>
-      <Header absolute color="white">
-        <NavMenu color="white" />
-      </Header>
+    <>
       <Slider slides={slides} />
       <Content
         title={content.title}
         description={content.description}
         tags={content.tags}
       />
-      <Container className={styles.mb160}>
+      <Container>
         <ImgContainer item1={gallery[0]} item2={gallery[1]} />
         <ImgContainer
           item1={gallery[2]}
@@ -38,11 +36,16 @@ export default function ChastnyyDomVEnkolovoPage() {
         <ImgContainer item1={gallery[10]} item2={gallery[11]} />
       </Container>
       <Container>
-        <Htag color="black" size="big" tag="h2" className={styles.mb40}>
+        <Htag
+          color="black"
+          size="big"
+          tag="h2"
+          className={cn(styles.mb40, styles.mt160)}
+        >
           Другие проекты
         </Htag>
         <Recommendations projects={projects} />
       </Container>
-    </div>
+    </>
   );
 }
