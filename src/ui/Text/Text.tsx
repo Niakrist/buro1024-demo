@@ -6,8 +6,8 @@ export interface ITextProps extends React.DetailedHTMLProps<
 > {
   children: React.ReactNode;
   color: 'white' | 'black';
-  size: 'small' | 'medium' | 'big';
-  fw?: 'fw400' | 'fw700';
+  size: 'small' | 'medium' | 'big' | 'veryBig';
+  fw?: 'fw400' | 'fw500' | 'fw700';
   className?: string;
 }
 
@@ -32,7 +32,9 @@ export const Text = ({
           [styles.smallText]: size === 'small',
           [styles.mediumText]: size === 'medium',
           [styles.bigText]: size === 'big',
+          [styles.veryBig]: size === 'veryBig',
           [styles.fw400]: fw === 'fw400',
+          [styles.fw500]: fw === 'fw500',
           [styles.fw700]: fw === 'fw700',
         },
         className,

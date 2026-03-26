@@ -7,4 +7,6 @@ export interface IHeaderProps extends React.DetailedHTMLProps<
   children: React.ReactNode;
   absolute?: boolean;
   color: 'white' | 'black';
+  className?: string;
+  blackTheme?: boolean;
 }
