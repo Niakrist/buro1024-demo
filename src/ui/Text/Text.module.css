@@ -1,6 +1,3 @@
-.text {
-  font-weight: 400;
-}
 .whiteText {
   color: var(--white-color);
 }
@@ -19,4 +16,12 @@
 .bigText {
   font-size: 24px;
   line-height: 1.2;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw700 {
+  font-weight: 700;
 }
