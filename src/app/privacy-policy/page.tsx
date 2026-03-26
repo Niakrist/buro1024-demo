@@ -1,4 +1,4 @@
-import { Button, Container, Htag, NavMenu, Text } from '@/ui';
+import { Container, Htag, NavMenu, Text } from '@/ui';
 import styles from './page.module.css';
 import { Header } from '@/components';
 
@@ -46,7 +46,7 @@ export default function AboutPage() {
           1.4. Во исполнение требований ч. 2 ст. 18.1 Закона о персональных
           данных настоящая Политика публикуется в свободном доступе в
           информационно-телекоммуникационной сети Интернет на сайте Оператора по
-          адресу: http://buro1024.ru/
+          адресу: https://buro1024.ru/
         </Text>
 
         <Text color="black" size="medium" className={styles.mb8} fw="fw700">
@@ -63,7 +63,7 @@ export default function AboutPage() {
         </Text>
 
         <Text color="black" size="medium" className={styles.mb8}>
-          2.2. Пользователь — любой посетитель веб-сайта http://buro1024.ru/
+          2.2. Пользователь — любой посетитель веб-сайта https://buro1024.ru/
         </Text>
 
         <Text color="black" size="medium" className={styles.mb8}>
@@ -109,7 +109,7 @@ export default function AboutPage() {
         <Text color="black" size="medium" className={styles.mb8}>
           2.9. Персональные данные — любая информация, относящаяся прямо или
           косвенно к определенному или определяемому Пользователю веб-сайта
-          http://buro1024.ru/
+          https://buro1024.ru/
         </Text>
 
         <Text color="black" size="medium" className={styles.mb8}>
