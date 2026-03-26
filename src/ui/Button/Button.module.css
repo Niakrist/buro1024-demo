@@ -2,7 +2,7 @@
   padding: 0;
   outline: none;
   border: none;
-  display: block;
+  display: inline-block;
   font-family: var(--font-family);
   cursor: pointer;
   border-radius: 4px;

@@ -5,7 +5,7 @@ export const PUBLICATIONS_DATA = [
     images: [],
     description:
       'Молодая пара мечтала о доме, который станет не просто красивой оболочкой, а настоящей частью их повседневной жизни. Они хотели пространство, наполненное теплом, светом и гармонией, способное поддержать семейные ценности и привычки каждого члена семьи. Такой запрос вдохновлял дизайнеров на создание уникального проекта, который сочетает современные технологии и качественные материалы, отражающие характер и историю будущих жильцов.',
-    url: '/garmonichnyy-soyuz-formy-i-soderzhaniya',
+    url: 'garmonichnyy-soyuz-formy-i-soderzhaniya',
   },
   {
     title:
@@ -14,7 +14,7 @@ export const PUBLICATIONS_DATA = [
     images: [],
     description:
       'Владельцы дома в Ленинградской области, обратившись в бюро Respace Architects, твёрдо представляли себе, каким должно быть идеальное пространство их дома: в нём каждая деталь работает не только как функция, но и имеет свой вес в общем смысловом контексте.',
-    url: '/dom-sonastroennyy-s-ritmom-zhizni-molodyh-suprugov-i-ih-ponimaniem-krasoty-sozdali-evgeniya-pepina-i-anna-luppova',
+    url: 'dom-sonastroennyy-s-ritmom-zhizni-molodyh-suprugov-i-ih-ponimaniem-krasoty-sozdali-evgeniya-pepina-i-anna-luppova',
   },
   {
     title: 'Проект Wright park 59. Дом для молодой пары.',
@@ -22,7 +22,7 @@ export const PUBLICATIONS_DATA = [
     images: [],
     description:
       'Дом для молодой пары спроектирован с акцентом на функциональность, эстетику и личные привычки, без подчинения трендам. Проект реализован совместно от первых планировочных решений до подбора света и текстиля.',
-    url: '/proekt-wright-park-59-dom-dlya-molodoy-pary',
+    url: 'proekt-wright-park-59-dom-dlya-molodoy-pary',
   },
   {
     title: 'ТОП-100. Детские комнаты',
@@ -30,7 +30,7 @@ export const PUBLICATIONS_DATA = [
     images: [],
     description:
       'Электронный журнал «ТОП‑100. Детские комнаты 2025» – 100 реализованных проектов дизайна интерьера детских, отобранных редакцией журнала «ГАЛЕРЕЯ ИНТЕРЬЕРОВ» из 1786 проектов 2025 года из России и СНГ.',
-    url: '/top-100-detskie-komnaty',
+    url: 'top-100-detskie-komnaty',
   },
   {
     title: 'Проект дома в коттеджном посёлке «Охтинский парк» 360 м²',
@@ -38,6 +38,6 @@ export const PUBLICATIONS_DATA = [
     images: ['pub-5-1.jpg', 'pub-5-2.jpg'],
     description:
       'Заказчики — молодая семейная пара с двумя детьми, которой хотелось выстроить жилое пространство в соответствии со своим динамичным ритмом жизни и видеть дом продуманным до деталей. Проект выполнен «под ключ» — от первых планировочных решений до финишных акцентов, света и текстиля',
-    url: '/proekt-doma-v-kottedzhnom-posyolke-ohtinskiy-park-360-m',
+    url: 'proekt-doma-v-kottedzhnom-posyolke-ohtinskiy-park-360-m',
   },
 ];
