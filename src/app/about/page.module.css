@@ -1,0 +1,37 @@
+.container {
+  padding-top: 20px;
+  margin-bottom: 160px;
+}
+
+.img {
+  width: 100%;
+  font-size: 0;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.content {
+  max-width: 800px;
+  margin-bottom: 80px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.contacts {
+  max-width: 530px;
+}
+
+.buttons {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}

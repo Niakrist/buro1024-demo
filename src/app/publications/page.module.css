@@ -1,3 +1,40 @@
 .pt20 {
   padding-top: 20px;
 }
+
+.container {
+  max-width: 1683px;
+  margin: 0 0 120px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: minmax(450px, 900px) minmax(280px, 568px);
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.mb80 + .mb80 {
+  margin-top: 80px;
+}
+.journal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 160px;
+}
+
+.journalImg {
+  display: block;
+  max-width: 100%;
+}
+.journalImg + .journalImg {
+  margin-top: 4px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+.mb32 {
+  margin-bottom: 32px;
+}
