@@ -1,12 +1,13 @@
-import { Container, DropDown, Htag, ImgContainer, NavMenu } from '@/ui';
-import styles from './page.module.css';
-import { Content, Header, Recommendations, Slider } from '@/components';
+import { Container, DropDown, Htag, ImgContainer } from '@/ui';
+import { Content, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
   adapterGallery,
   adapterSliderForProject,
 } from '@/utils';
+import styles from '../page.module.css';
+import cn from 'classnames';
 
 export default function OtelVSochiPage() {
   const slides = adapterSliderForProject(projects[9]);
@@ -15,18 +16,20 @@ export default function OtelVSochiPage() {
   const galleryS = adapterGallery(projects[10]);
 
   return (
-    <div className={styles.page}>
-      <Header absolute color="white">
-        <NavMenu color="white" />
-      </Header>
+    <>
       <Slider slides={slides} />
       <Content
         title={content.title}
         description={content.description}
         tags={content.tags}
       />
-      <Container className={styles.mb20}>
-        <Htag className={styles.mbTitle} color="black" size="big" tag="h2">
+      <Container>
+        <Htag
+          className={cn(styles.mb20, styles.mt80)}
+          color="black"
+          size="big"
+          tag="h2"
+        >
           Дом L
         </Htag>
         <ImgContainer item1={gallery[0]} />
@@ -38,11 +41,16 @@ export default function OtelVSochiPage() {
           item3={gallery[6]}
         />
       </Container>
-      <Container className={styles.mb80}>
-        <DropDown name="Технические планы проекта" />
+      <Container>
+        <DropDown name="Технические планы проекта" className={styles.mt20} />
       </Container>
-      <Container className={styles.mb20}>
-        <Htag className={styles.mb20} color="black" size="big" tag="h2">
+      <Container>
+        <Htag
+          className={cn(styles.mb20, styles.mt80)}
+          color="black"
+          size="big"
+          tag="h2"
+        >
           Дом S
         </Htag>
         <ImgContainer item1={galleryS[0]} />
@@ -57,15 +65,20 @@ export default function OtelVSochiPage() {
         />
         <ImgContainer item1={galleryS[10]} />
       </Container>
-      <Container className={styles.mb160}>
-        <DropDown name="Технические планы проекта" />
+      <Container>
+        <DropDown name="Технические планы проекта" className={styles.mt20} />
       </Container>
       <Container>
-        <Htag color="black" size="big" tag="h2" className={styles.mb40}>
+        <Htag
+          color="black"
+          size="big"
+          tag="h2"
+          className={cn(styles.mb40, styles.mt160)}
+        >
           Другие проекты
         </Htag>
         <Recommendations projects={projects} />
       </Container>
-    </div>
+    </>
   );
 }

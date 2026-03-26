@@ -1,6 +1,5 @@
 import { Footer, Header } from '@/components';
 import { NavMenu } from '@/ui';
-import styles from './page.module.css';
 
 export default function PagesLayout({
   children,
@@ -9,10 +8,10 @@ export default function PagesLayout({
 }>) {
   return (
     <>
-      <Header absolute color="white">
-        <NavMenu color="white" />
+      <Header color="black">
+        <NavMenu color="black" />
       </Header>
-      <main className={styles.main}>{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );

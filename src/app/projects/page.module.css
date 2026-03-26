@@ -3,6 +3,30 @@
   margin-bottom: 63px;
 }
 
+.main {
+  position: relative;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
 .mb {
   margin-bottom: 63px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.mt160 {
+  margin-top: 160px;
 }

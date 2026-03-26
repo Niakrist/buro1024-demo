@@ -1,5 +1,5 @@
 import { Container, GalleryContainer, Htag, NavMenu } from '@/ui';
-import { Header, Slider } from '@/components';
+import { Footer, Header, Slider } from '@/components';
 import { projects } from '@/data';
 import { adapterSlider } from '@/utils';
 import styles from './page.module.css';
@@ -7,7 +7,7 @@ import styles from './page.module.css';
 export default function Home() {
   const slides = adapterSlider(projects);
   return (
-    <div className={styles.page}>
+    <>
       <Header absolute color="white">
         <NavMenu color="white" />
       </Header>
@@ -24,6 +24,7 @@ export default function Home() {
       <GalleryContainer vh="vh100" item1={projects[1]} item2={projects[2]} />
       <GalleryContainer vh="vh100" item1={projects[5]} />
       <GalleryContainer vh="vh100" item1={projects[4]} item2={projects[6]} />
-    </div>
+      <Footer />
+    </>
   );
 }
