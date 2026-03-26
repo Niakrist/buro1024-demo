@@ -2,7 +2,7 @@ import { Container, Htag, NavMenu, Text } from '@/ui';
 import styles from './page.module.css';
 import { Header } from '@/components';
 
-export default function AboutPage() {
+export default function CookiePolicyPage() {
   return (
     <>
       <Header color="black">
@@ -151,7 +151,7 @@ export default function AboutPage() {
           Пользователь подтверждает свое согласие с новой редакцией Положения.
         </Text>
 
-        <Text color="black" size="medium" className={styles.mb8}>
+        <Text color="black" size="medium">
           6.3. По всем вопросам, связанным с использованием файлов cookie на
           Сайте, Пользователь может обратиться к Бюро по электронной почте:
           re.space.arch@ya.ru.
