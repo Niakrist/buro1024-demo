@@ -10,12 +10,6 @@ export const CookiePortal = () => {
     return !hasConsented;
   });
 
-  const hasConsented = sessionStorage.getItem('cookie-consent');
-
-  if (!hasConsented) {
-    setIsVisible(true);
-  }
-
   const handleAccept = () => {
     sessionStorage.setItem('cookie-consent', 'true');
     setIsVisible(false);
