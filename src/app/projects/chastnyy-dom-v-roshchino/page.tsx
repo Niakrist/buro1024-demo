@@ -1,6 +1,6 @@
 import { Container, DropDown, Htag, NavMenu } from '@/ui';
 import { Content, Galery, Header, Recommendations, Slider } from '@/components';
-import { projects } from '@/data';
+import { PROJECTS_DATA } from '@/data';
 import {
   adapterContent,
   adapterGallery,
@@ -10,9 +10,9 @@ import styles from '../page.module.css';
 import cn from 'classnames';
 
 export default function ChastnyyDomVRoshchinoPage() {
-  const slides = adapterSliderForProject(projects[0]);
-  const content = adapterContent(projects[0]);
-  const gallery = adapterGallery(projects[0]);
+  const slides = adapterSliderForProject(PROJECTS_DATA[0]);
+  const content = adapterContent(PROJECTS_DATA[0]);
+  const gallery = adapterGallery(PROJECTS_DATA[0]);
 
   return (
     <>
@@ -38,7 +38,7 @@ export default function ChastnyyDomVRoshchinoPage() {
         >
           Другие проекты
         </Htag>
-        <Recommendations projects={projects} />
+        <Recommendations projects={PROJECTS_DATA} />
       </Container>
     </>
   );

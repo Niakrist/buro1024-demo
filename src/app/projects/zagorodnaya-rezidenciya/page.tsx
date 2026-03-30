@@ -1,6 +1,6 @@
 import { Container, Htag, NavMenu } from '@/ui';
 import { Content, Galery, Header, Recommendations, Slider } from '@/components';
-import { projects } from '@/data';
+import { PROJECTS_DATA } from '@/data';
 import {
   adapterContent,
   adapterGallery,
@@ -10,9 +10,9 @@ import styles from '../page.module.css';
 import cn from 'classnames';
 
 export default function ZagorodnayaRezidenciyaPage() {
-  const slides = adapterSliderForProject(projects[1]);
-  const content = adapterContent(projects[1]);
-  const gallery = adapterGallery(projects[1]);
+  const slides = adapterSliderForProject(PROJECTS_DATA[1]);
+  const content = adapterContent(PROJECTS_DATA[1]);
+  const gallery = adapterGallery(PROJECTS_DATA[1]);
 
   console.log('slides: ', slides);
 
@@ -37,7 +37,7 @@ export default function ZagorodnayaRezidenciyaPage() {
         >
           Другие проекты
         </Htag>
-        <Recommendations projects={projects} />
+        <Recommendations projects={PROJECTS_DATA} />
       </Container>
     </>
   );

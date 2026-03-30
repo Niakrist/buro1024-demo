@@ -1,6 +1,6 @@
 import { Container, Htag, NavMenu } from '@/ui';
 import { Content, Galery, Header, Recommendations, Slider } from '@/components';
-import { projects } from '@/data';
+import { PROJECTS_DATA } from '@/data';
 import {
   adapterContent,
   adapterGallery,
@@ -10,9 +10,9 @@ import styles from '../page.module.css';
 import cn from 'classnames';
 
 export default function KafeMagazinLamberiPage() {
-  const slides = adapterSliderForProject(projects[12]);
-  const content = adapterContent(projects[12]);
-  const gallery = adapterGallery(projects[12]);
+  const slides = adapterSliderForProject(PROJECTS_DATA[12]);
+  const content = adapterContent(PROJECTS_DATA[12]);
+  const gallery = adapterGallery(PROJECTS_DATA[12]);
 
   return (
     <>
@@ -35,7 +35,7 @@ export default function KafeMagazinLamberiPage() {
         >
           Другие проекты
         </Htag>
-        <Recommendations projects={projects} />
+        <Recommendations projects={PROJECTS_DATA} />
       </Container>
     </>
   );

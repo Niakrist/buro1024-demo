@@ -1,11 +1,11 @@
 import { Container, GalleryContainer, Htag, NavMenu } from '@/ui';
 import { Footer, Header, Slider } from '@/components';
-import { projects } from '@/data';
+import { PROJECTS_DATA } from '@/data';
 import { adapterSlider } from '@/utils';
 import styles from './page.module.css';
 
 export default function Home() {
-  const slides = adapterSlider(projects);
+  const slides = adapterSlider(PROJECTS_DATA);
   return (
     <>
       <Header padding="small" absolute color="white">
@@ -24,15 +24,15 @@ export default function Home() {
       <GalleryContainer
         vh="vh100"
         mb="big"
-        item1={projects[1]}
-        item2={projects[2]}
+        item1={PROJECTS_DATA[1]}
+        item2={PROJECTS_DATA[2]}
       />
-      <GalleryContainer vh="vh100" mb="big" item1={projects[5]} />
+      <GalleryContainer vh="vh100" mb="big" item1={PROJECTS_DATA[5]} />
       <GalleryContainer
         vh="vh100"
         mb="big"
-        item1={projects[4]}
-        item2={projects[6]}
+        item1={PROJECTS_DATA[4]}
+        item2={PROJECTS_DATA[6]}
       />
       <Footer />
     </>

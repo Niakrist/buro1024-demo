@@ -1,6 +1,6 @@
 import { Container, Htag, NavMenu } from '@/ui';
 import { Content, Galery, Header, Recommendations, Slider } from '@/components';
-import { projects } from '@/data';
+import { PROJECTS_DATA } from '@/data';
 import {
   adapterContent,
   adapterGallery,
@@ -10,9 +10,9 @@ import styles from '../page.module.css';
 import cn from 'classnames';
 
 export default function ChastnyyDomVMyaglovoPage() {
-  const slides = adapterSliderForProject(projects[5]);
-  const content = adapterContent(projects[5]);
-  const gallery = adapterGallery(projects[5]);
+  const slides = adapterSliderForProject(PROJECTS_DATA[5]);
+  const content = adapterContent(PROJECTS_DATA[5]);
+  const gallery = adapterGallery(PROJECTS_DATA[5]);
 
   return (
     <>
@@ -35,7 +35,7 @@ export default function ChastnyyDomVMyaglovoPage() {
         >
           Другие проекты
         </Htag>
-        <Recommendations projects={projects} />
+        <Recommendations projects={PROJECTS_DATA} />
       </Container>
     </>
   );

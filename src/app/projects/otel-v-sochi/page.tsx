@@ -1,6 +1,6 @@
 import { Container, DropDown, Htag, NavMenu } from '@/ui';
 import { Content, Galery, Header, Recommendations, Slider } from '@/components';
-import { projects } from '@/data';
+import { PROJECTS_DATA } from '@/data';
 import {
   adapterContent,
   adapterGallery,
@@ -10,10 +10,10 @@ import styles from '../page.module.css';
 import cn from 'classnames';
 
 export default function OtelVSochiPage() {
-  const slides = adapterSliderForProject(projects[9]);
-  const content = adapterContent(projects[9]);
-  const gallery = adapterGallery(projects[9]);
-  const galleryS = adapterGallery(projects[10]);
+  const slides = adapterSliderForProject(PROJECTS_DATA[9]);
+  const content = adapterContent(PROJECTS_DATA[9]);
+  const gallery = adapterGallery(PROJECTS_DATA[9]);
+  const galleryS = adapterGallery(PROJECTS_DATA[10]);
 
   return (
     <>
@@ -58,7 +58,7 @@ export default function OtelVSochiPage() {
         >
           Другие проекты
         </Htag>
-        <Recommendations projects={projects} />
+        <Recommendations projects={PROJECTS_DATA} />
       </Container>
     </>
   );
