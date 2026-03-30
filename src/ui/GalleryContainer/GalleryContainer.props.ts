@@ -9,4 +9,5 @@ export interface IGalleryContainerProps extends React.DetailedHTMLProps<
   item3?: IProject;
   className?: string;
   mb?: 'small' | 'medium' | 'big';
+  vh?: 'vh100';
 }

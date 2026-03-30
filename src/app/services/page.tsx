@@ -25,7 +25,7 @@ export default function ServicesPage() {
                 color="black"
                 size="standart"
                 underline
-                href={service.url}
+                href={`.${service.url}`}
               >
                 {service.link}
               </UILink>
