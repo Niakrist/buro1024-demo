@@ -4,5 +4,6 @@ export interface IUILinkProps {
   color: 'white' | 'black';
   underline?: boolean;
   className?: string;
-  size?: 'small' | 'standart' | 'navLink';
+  size?: 'small' | 'standart';
+  type?: 'header' | 'footer';
 }

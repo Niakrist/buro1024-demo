@@ -31,6 +31,7 @@ export const GalleryContainer = ({
             img={item1.projectImg}
             tags={item1.tags}
             title={item1.title}
+            className={styles.heightMobile}
           />
         </Link>
         <Link href={`${item2.url}`} className={styles.parent}>
@@ -38,6 +39,7 @@ export const GalleryContainer = ({
             img={item2.projectImg}
             tags={item2.tags}
             title={item2.title}
+            className={styles.heightMobile}
           />
         </Link>
         <Link href={`${item3.url}`} className={styles.parent}>
@@ -45,6 +47,7 @@ export const GalleryContainer = ({
             img={item3.projectImg}
             tags={item3.tags}
             title={item3.title}
+            className={styles.heightMobile}
           />
         </Link>
       </div>
@@ -66,6 +69,7 @@ export const GalleryContainer = ({
             img={item1.projectImg}
             tags={item1.tags}
             title={item1.title}
+            className={styles.heightMobile}
           />
         </Link>
         <Link href={`${item2.url}`} className={styles.parent}>
@@ -73,6 +77,7 @@ export const GalleryContainer = ({
             img={item2.projectImg}
             tags={item2.tags}
             title={item2.title}
+            className={styles.heightMobile}
           />
         </Link>
       </div>
@@ -94,6 +99,7 @@ export const GalleryContainer = ({
             img={item1.projectImg}
             tags={item1.tags}
             title={item1.title}
+            className={styles.heightMobileBig}
           />
         </Link>
       </div>

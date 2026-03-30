@@ -27,3 +27,10 @@
   overflow: hidden;
   font-size: 0;
 }
+
+@media (max-width: 1239px) {
+  .medium,
+  .big {
+    font-size: 30px;
+  }
+}

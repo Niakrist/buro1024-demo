@@ -9,6 +9,8 @@
   width: 100%;
   border-radius: 4px;
   font-size: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .one {
@@ -31,4 +33,24 @@
 
 .bigMb {
   margin-bottom: 80px;
+}
+
+@media (max-width: 1239px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .vh100 {
+    height: auto;
+  }
+
+  .heightMobile {
+    min-height: 460px;
+  }
+
+  .heightMobileBig {
+    min-height: 610px;
+    object-position: 40%;
+  }
 }
