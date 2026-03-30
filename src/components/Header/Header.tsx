@@ -1,8 +1,9 @@
-import { UILink, Icon, Button } from '@/ui';
-
+'use client';
+import { UILink, Icon, Button, MenuBurger } from '@/ui';
 import styles from './Header.module.css';
 import { IHeaderProps } from './Header.props';
 import cn from 'classnames';
+import { useEffect, useState } from 'react';
 
 export const Header = ({
   children,
@@ -13,6 +14,25 @@ export const Header = ({
   padding = 'standart',
   ...props
 }: IHeaderProps) => {
+  const [isMobile, setIsMobile] = useState(true);
+  const [isShow, setIsShow] = useState(false);
+
+  const handleOpen = () => {
+    setIsShow((prev) => !prev);
+  };
+
+  useEffect(() => {
+    if (isShow) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isShow]);
+
   return (
     <header
       className={cn(
@@ -27,19 +47,33 @@ export const Header = ({
       {...props}
     >
       <UILink color={color} href="/" className={styles.link}>
-        <Icon name="iconLogo" />
+        <Icon name="iconLogo" className={styles.iconLogo} />
       </UILink>
 
-      <nav className={styles.nav}>
+      {isMobile && <MenuBurger onClick={handleOpen} isShow={isShow} />}
+      <nav className={cn(styles.nav, { [styles.mobNav]: isShow })}>
         {children}
-        <Button
-          bg={blackTheme ? 'white' : 'black'}
-          color={blackTheme ? 'black' : 'white'}
-          size="small"
-          uppercase
-        >
-          Recreate
-        </Button>
+
+        {isMobile ? (
+          <Button
+            bg="white"
+            color="black"
+            size="full"
+            fontWeight="fv500"
+            uppercase
+          >
+            Recreate
+          </Button>
+        ) : (
+          <Button
+            bg={blackTheme ? 'white' : 'black'}
+            color={blackTheme ? 'black' : 'white'}
+            size="small"
+            uppercase
+          >
+            Recreate
+          </Button>
+        )}
       </nav>
     </header>
   );
