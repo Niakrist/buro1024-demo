@@ -8,7 +8,7 @@ export default function Home() {
   const slides = adapterSlider(projects);
   return (
     <>
-      <Header absolute color="white">
+      <Header padding="small" absolute color="white">
         <NavMenu color="white" />
       </Header>
       <Slider slides={slides} />

@@ -10,11 +10,20 @@ export const Header = ({
   absolute = false,
   className,
   blackTheme = false,
+  padding = 'standart',
   ...props
 }: IHeaderProps) => {
   return (
     <header
-      className={cn(styles.header, { [styles.absolute]: absolute }, className)}
+      className={cn(
+        styles.header,
+        {
+          [styles.absolute]: absolute,
+          [styles.paddingSmall]: padding === 'small',
+          [styles.paddingStandart]: padding === 'standart',
+        },
+        className,
+      )}
       {...props}
     >
       <UILink color={color} href="/" className={styles.link}>

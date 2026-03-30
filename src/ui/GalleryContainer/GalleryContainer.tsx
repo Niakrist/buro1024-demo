@@ -8,7 +8,7 @@ export const GalleryContainer = ({
   item1,
   item2,
   item3,
-
+  vh,
   mb = 'big',
   className,
 }: IGalleryContainerProps) => {
@@ -22,6 +22,7 @@ export const GalleryContainer = ({
           { [styles.smallMb]: mb === 'small' },
           { [styles.mediumMb]: mb === 'medium' },
           { [styles.bigMb]: mb === 'big' },
+          { [styles.vh100]: vh === 'vh100' },
           className,
         )}
       >
@@ -56,6 +57,7 @@ export const GalleryContainer = ({
           { [styles.smallMb]: mb === 'small' },
           { [styles.mediumMb]: mb === 'medium' },
           { [styles.bigMb]: mb === 'big' },
+          { [styles.vh100]: vh === 'vh100' },
           className,
         )}
       >
@@ -80,10 +82,10 @@ export const GalleryContainer = ({
       <div
         className={cn(
           styles.wrapper,
-
           { [styles.smallMb]: mb === 'small' },
           { [styles.mediumMb]: mb === 'medium' },
           { [styles.bigMb]: mb === 'big' },
+          { [styles.vh100]: vh === 'vh100' },
           className,
         )}
       >
