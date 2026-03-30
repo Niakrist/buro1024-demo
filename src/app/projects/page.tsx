@@ -7,7 +7,7 @@ export default function ProjectsPage() {
   return (
     <>
       <Header color="black">
-        <NavMenu color="black" />
+        <NavMenu color="black" type="header" />
       </Header>
       <Container relative>
         <GalleryContainer

@@ -10,6 +10,7 @@ export const UILink = ({
   underline = false,
   className,
   children,
+  type,
   size = 'standart',
   ...props
 }: IUILinkProps) => {
@@ -23,7 +24,8 @@ export const UILink = ({
           [styles.colorBlack]: color === 'black',
           [styles.underline]: underline === true,
           [styles.small]: size === 'small',
-          [styles.navLink]: size === 'navLink',
+          [styles.header]: type === 'header',
+          [styles.footer]: type === 'footer',
         },
         className,
       )}

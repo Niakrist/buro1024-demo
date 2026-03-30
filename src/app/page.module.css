@@ -48,3 +48,9 @@
 .content {
   max-width: 1097px;
 }
+
+@media (max-width: 1239px) {
+  .title {
+    margin-bottom: 20px;
+  }
+}

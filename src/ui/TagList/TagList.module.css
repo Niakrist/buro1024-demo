@@ -16,3 +16,10 @@
 .blackColor {
   color: var(--black-color);
 }
+
+@media (max-width: 1239px) {
+  .tagList {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

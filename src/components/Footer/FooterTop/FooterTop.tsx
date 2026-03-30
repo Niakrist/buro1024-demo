@@ -4,9 +4,9 @@ import { EMAIL, PHONE, TELEGRAM, WHATSAPP } from '@/constants';
 
 export const FooterTop = () => {
   return (
-    <Container flex className={styles.margin}>
+    <Container flex className={styles.container}>
       <div className={styles.left}>
-        <Icon name="iconLogo" />
+        <Icon name="iconLogo" className={styles.iconLogo} />
         <div className={styles.iconGroup}>
           <Icon name="iconRespace" />
           <Icon name="iconArchitects" />
@@ -16,7 +16,7 @@ export const FooterTop = () => {
         </p>
       </div>
       <div className={styles.right}>
-        <NavMenu color="black" />
+        <NavMenu color="black" type="footer" />
         <div className={styles.contact}>
           <UILink color="black" className={styles.link} href="">
             {PHONE}

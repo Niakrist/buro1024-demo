@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header padding="small" absolute color="white">
-        <NavMenu color="white" />
+        <NavMenu color="white" type="header" />
       </Header>
       <Slider slides={slides} />
       <Container className={styles.container}>

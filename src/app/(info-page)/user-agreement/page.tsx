@@ -6,7 +6,7 @@ export default function UserAgreementPage() {
   return (
     <>
       <Header color="black">
-        <NavMenu color="black" />
+        <NavMenu color="black" type="header" />
       </Header>
       <Container className={styles.container}>
         <Htag color="black" size="big" tag="h1" className={styles.mb20}>

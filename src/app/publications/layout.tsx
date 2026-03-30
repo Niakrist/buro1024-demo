@@ -9,7 +9,7 @@ export default function PagesLayout({
   return (
     <>
       <Header color="black">
-        <NavMenu color="black" />
+        <NavMenu color="black" type="header" />
       </Header>
       <main className={styles.main}>{children}</main>
       <Footer />
