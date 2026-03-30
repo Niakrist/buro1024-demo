@@ -11,3 +11,4 @@ export { DropDown } from './DropDown/DropDown';
 export { TagList } from './TagList/TagList';
 export { Text } from './Text/Text';
 export { CookiePortal } from './CookiePortal/CookiePortal';
+export { BubbleList } from './BubbleList/BubbleList';
