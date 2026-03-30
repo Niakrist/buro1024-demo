@@ -6,8 +6,7 @@
 
 .parent {
   position: relative;
-}
-.img {
+  width: 100%;
   border-radius: 4px;
   font-size: 0;
 }
@@ -28,6 +27,10 @@
 
 .smallMb {
   margin-bottom: 4px;
+}
+
+.mediumMb {
+  margin-bottom: 63px;
 }
 
 .bigMb {

@@ -1,17 +1,19 @@
-.pt20 {
+.main {
   padding-top: 20px;
 }
 
 .container {
-  max-width: 1683px;
+  /* max-width: 1683px; */
   margin: 0 0 120px;
+  padding: 0 187px 0 40px;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: minmax(450px, 900px) minmax(280px, 568px);
-  justify-content: space-between;
-  gap: 36px;
+  /* grid-template-columns: minmax(450px, 900px) minmax(280px, 568px); */
+  /* justify-content: space-between; */
+  grid-template-columns: 6fr 4fr;
+  gap: 197px;
 }
 
 .mb80 + .mb80 {

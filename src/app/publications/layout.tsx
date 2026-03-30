@@ -1,6 +1,6 @@
 import { Footer, Header } from '@/components';
 import { NavMenu } from '@/ui';
-
+import styles from './page.module.css';
 export default function PagesLayout({
   children,
 }: Readonly<{
@@ -11,7 +11,7 @@ export default function PagesLayout({
       <Header color="black">
         <NavMenu color="black" />
       </Header>
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
       <Footer />
     </>
   );

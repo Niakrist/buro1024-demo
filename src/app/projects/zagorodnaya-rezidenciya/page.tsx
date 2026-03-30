@@ -1,5 +1,5 @@
-import { Container, Htag, ImgContainer } from '@/ui';
-import { Content, Recommendations, Slider } from '@/components';
+import { Container, Htag, ImgContainer, NavMenu } from '@/ui';
+import { Content, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -14,8 +14,13 @@ export default function ZagorodnayaRezidenciyaPage() {
   const content = adapterContent(projects[1]);
   const gallery = adapterGallery(projects[1]);
 
+  console.log('slides: ', slides);
+
   return (
     <>
+      <Header absolute color="white">
+        <NavMenu color="white" />
+      </Header>
       <Slider slides={slides} />
       <Content
         title={content.title}
