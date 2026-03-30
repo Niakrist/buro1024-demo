@@ -8,30 +8,43 @@ export const GalleryContainer = ({
   item1,
   item2,
   item3,
-  vh,
+
   mb = 'big',
   className,
 }: IGalleryContainerProps) => {
+  console.log('className: ', className);
+
   if (item1 && item2 && item3) {
     return (
       <div
         className={cn(
           styles.wrapper,
-          { [styles.vh100]: vh === 'vh100' },
-          { [styles.vh90]: vh === 'vh90' },
           { [styles.smallMb]: mb === 'small' },
+          { [styles.mediumMb]: mb === 'medium' },
           { [styles.bigMb]: mb === 'big' },
           className,
         )}
       >
         <Link href={`${item1.url}`} className={styles.parent}>
-          <ImageUI img={item1.img} tags={item1.tags} title={item1.title} />
+          <ImageUI
+            img={item1.projectImg}
+            tags={item1.tags}
+            title={item1.title}
+          />
         </Link>
         <Link href={`${item2.url}`} className={styles.parent}>
-          <ImageUI img={item2.img} tags={item2.tags} title={item2.title} />
+          <ImageUI
+            img={item2.projectImg}
+            tags={item2.tags}
+            title={item2.title}
+          />
         </Link>
         <Link href={`${item3.url}`} className={styles.parent}>
-          <ImageUI img={item3.img} tags={item3.tags} title={item3.title} />
+          <ImageUI
+            img={item3.projectImg}
+            tags={item3.tags}
+            title={item3.title}
+          />
         </Link>
       </div>
     );
@@ -40,36 +53,48 @@ export const GalleryContainer = ({
       <div
         className={cn(
           styles.wrapper,
-          { [styles.vh100]: vh === 'vh100' },
-          { [styles.vh90]: vh === 'vh90' },
           { [styles.smallMb]: mb === 'small' },
+          { [styles.mediumMb]: mb === 'medium' },
           { [styles.bigMb]: mb === 'big' },
           className,
         )}
       >
         <Link href={`${item1.url}`} className={styles.parent}>
-          <ImageUI img={item1.img} tags={item1.tags} title={item1.title} />
+          <ImageUI
+            img={item1.projectImg}
+            tags={item1.tags}
+            title={item1.title}
+          />
         </Link>
         <Link href={`${item2.url}`} className={styles.parent}>
-          <ImageUI img={item2.img} tags={item2.tags} title={item2.title} />
+          <ImageUI
+            img={item2.projectImg}
+            tags={item2.tags}
+            title={item2.title}
+          />
         </Link>
       </div>
     );
   } else if (item1) {
     return (
-      <Link
-        href={`${item1.url}`}
+      <div
         className={cn(
-          styles.one,
-          { [styles.vh100]: vh === 'vh100' },
-          { [styles.vh90]: vh === 'vh90' },
+          styles.wrapper,
+
           { [styles.smallMb]: mb === 'small' },
+          { [styles.mediumMb]: mb === 'medium' },
           { [styles.bigMb]: mb === 'big' },
           className,
         )}
       >
-        <ImageUI img={item1.img} tags={item1.tags} title={item1.title} />
-      </Link>
+        <Link href={`${item1.url}`} className={styles.parent}>
+          <ImageUI
+            img={item1.projectImg}
+            tags={item1.tags}
+            title={item1.title}
+          />
+        </Link>
+      </div>
     );
   }
 };

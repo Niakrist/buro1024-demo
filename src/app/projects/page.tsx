@@ -1,38 +1,47 @@
-import { Container, GalleryContainer } from '@/ui';
+import { Container, GalleryContainer, NavMenu } from '@/ui';
 import styles from './page.module.css';
 import { projects } from '@/data';
+import { Header } from '@/components';
 
 export default function ProjectsPage() {
   return (
-    <Container relative>
-      <GalleryContainer className={styles.mb} vh="vh100" item1={projects[0]} />
-      <GalleryContainer
-        vh="vh100"
-        item1={projects[1]}
-        item2={projects[2]}
-        className={styles.wrapper}
-      />
-      <GalleryContainer vh="vh100" item1={projects[5]} />
-      <GalleryContainer
-        vh="vh100"
-        item1={projects[4]}
-        item2={projects[6]}
-        className={styles.wrapper}
-      />
-      <GalleryContainer className={styles.mb} vh="vh100" item1={projects[7]} />
-      <GalleryContainer
-        vh="vh100"
-        item1={projects[3]}
-        item2={projects[11]}
-        item3={projects[12]}
-        className={styles.wrapper}
-      />
-      <GalleryContainer
-        vh="vh100"
-        item1={projects[8]}
-        item2={projects[6]}
-        className={styles.wrapper}
-      />
-    </Container>
+    <>
+      <Header color="black">
+        <NavMenu color="black" />
+      </Header>
+      <Container relative>
+        <GalleryContainer
+          item1={projects[0]}
+          className={styles.pt43}
+          mb="medium"
+        />
+        <GalleryContainer
+          item1={projects[1]}
+          item2={projects[2]}
+          className={styles.wrapper}
+          mb="medium"
+        />
+        <GalleryContainer item1={projects[5]} mb="medium" />
+        <GalleryContainer
+          item1={projects[4]}
+          item2={projects[6]}
+          className={styles.wrapper}
+          mb="medium"
+        />
+        <GalleryContainer className={styles.mb} item1={projects[7]} />
+        <GalleryContainer
+          item1={projects[3]}
+          item2={projects[11]}
+          item3={projects[12]}
+          className={styles.wrapper}
+          mb="medium"
+        />
+        <GalleryContainer
+          item1={projects[8]}
+          item2={projects[6]}
+          className={styles.wrapper}
+        />
+      </Container>
+    </>
   );
 }

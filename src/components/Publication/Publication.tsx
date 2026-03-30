@@ -24,7 +24,7 @@ export const Publication = ({
       return (
         <div className={cn(styles.wrapper, styles.mb120)}>
           <img
-            className={cn(styles.img)}
+            className={styles.img}
             src={publication.img}
             alt={publication.title}
           />

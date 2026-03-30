@@ -6,7 +6,7 @@ import styles from './page.module.css';
 export default function PublicationsPage() {
   return (
     <>
-      <Container className={styles.pt20}>
+      <Container>
         <Htag hidden color="black" size="big" tag="h1">
           Публикации
         </Htag>
@@ -16,31 +16,33 @@ export default function PublicationsPage() {
           buttonName="Читать полностью"
         />
       </Container>
-      <Container>
-        <div className={styles.container}>
-          <div className={styles.wrapper}>
+
+      {/* // */}
+      {/* <Container> */}
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
+          <Publication
+            publication={PUBLICATIONS_DATA[1]}
+            type="medium"
+            buttonName="Читать полностью"
+          />
+          <div>
             <Publication
-              publication={PUBLICATIONS_DATA[1]}
-              type="medium"
-              buttonName="Читать полностью"
+              publication={PUBLICATIONS_DATA[2]}
+              type="small"
+              className={styles.mb80}
+              buttonName="Читать статью "
             />
-            <div>
-              <Publication
-                publication={PUBLICATIONS_DATA[2]}
-                type="small"
-                className={styles.mb80}
-                buttonName="Читать статью "
-              />
-              <Publication
-                publication={PUBLICATIONS_DATA[3]}
-                type="small"
-                className={styles.mb80}
-                buttonName="Электронная версия"
-              />
-            </div>
+            <Publication
+              publication={PUBLICATIONS_DATA[3]}
+              type="small"
+              className={styles.mb80}
+              buttonName="Электронная версия"
+            />
           </div>
         </div>
-      </Container>
+      </div>
+      {/* </Container> */}
       <Container className={styles.journal}>
         <div>
           <img

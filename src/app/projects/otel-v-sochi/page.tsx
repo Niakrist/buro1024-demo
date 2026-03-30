@@ -1,5 +1,5 @@
-import { Container, DropDown, Htag, ImgContainer } from '@/ui';
-import { Content, Recommendations, Slider } from '@/components';
+import { Container, DropDown, Htag, ImgContainer, NavMenu } from '@/ui';
+import { Content, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -17,6 +17,9 @@ export default function OtelVSochiPage() {
 
   return (
     <>
+      <Header absolute color="white">
+        <NavMenu color="white" />
+      </Header>
       <Slider slides={slides} />
       <Content
         title={content.title}
@@ -24,12 +27,7 @@ export default function OtelVSochiPage() {
         tags={content.tags}
       />
       <Container>
-        <Htag
-          className={cn(styles.mb20, styles.mt80)}
-          color="black"
-          size="big"
-          tag="h2"
-        >
+        <Htag className={styles.mb20} color="black" size="big" tag="h2">
           Дом L
         </Htag>
         <ImgContainer item1={gallery[0]} />

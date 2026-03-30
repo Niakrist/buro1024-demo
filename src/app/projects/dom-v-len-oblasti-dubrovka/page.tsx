@@ -1,5 +1,5 @@
-import { Container, Htag, ImgContainer } from '@/ui';
-import { Content, Recommendations, Slider } from '@/components';
+import { Container, Htag, ImgContainer, NavMenu } from '@/ui';
+import { Content, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -16,6 +16,9 @@ export default function DomVLenOblastiDubrovkaPage() {
 
   return (
     <>
+      <Header absolute color="white">
+        <NavMenu color="white" />
+      </Header>
       <Slider slides={slides} />
       <Content
         title={content.title}
@@ -25,7 +28,7 @@ export default function DomVLenOblastiDubrovkaPage() {
       <Container>
         <ImgContainer item1={gallery[0]} item2={gallery[1]} />
         <ImgContainer item1={gallery[2]} item2={gallery[3]} />
-        <ImgContainer item1={gallery[4]} item2={gallery[6]} />
+        <ImgContainer item1={gallery[4]} item2={gallery[5]} />
         <ImgContainer item1={gallery[6]} />
         <ImgContainer item1={gallery[7]} item2={gallery[8]} />
         <ImgContainer item1={gallery[9]} />

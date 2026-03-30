@@ -27,7 +27,7 @@ export default function RootLayout({
       <body>
         {children}
         <div id="cookie-portal" />
-        <CookiePortal />
+        {/* <CookiePortal /> */}
       </body>
     </html>
   );
