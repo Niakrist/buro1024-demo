@@ -1,5 +1,5 @@
-import { Container, DropDown, Htag, ImgContainer, NavMenu } from '@/ui';
-import { Content, Header, Recommendations, Slider } from '@/components';
+import { Container, DropDown, Htag, NavMenu } from '@/ui';
+import { Content, Galery, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -30,15 +30,8 @@ export default function OtelVSochiPage() {
         <Htag className={styles.mb20} color="black" size="big" tag="h2">
           Дом L
         </Htag>
-        <ImgContainer item1={gallery[0]} />
-        <ImgContainer item1={gallery[1]} item2={gallery[2]} />
-        <ImgContainer item1={gallery[3]} />
-        <ImgContainer
-          item1={gallery[4]}
-          item2={gallery[5]}
-          item3={gallery[6]}
-        />
       </Container>
+      <Galery gallery={gallery} />
       <Container>
         <DropDown name="Технические планы проекта" className={styles.mt20} />
       </Container>
@@ -51,18 +44,8 @@ export default function OtelVSochiPage() {
         >
           Дом S
         </Htag>
-        <ImgContainer item1={galleryS[0]} />
-        <ImgContainer item1={galleryS[1]} />
-        <ImgContainer item1={galleryS[2]} item2={galleryS[3]} />
-        <ImgContainer item1={galleryS[4]} />
-        <ImgContainer item1={galleryS[5]} item2={galleryS[6]} />
-        <ImgContainer
-          item1={galleryS[7]}
-          item2={galleryS[8]}
-          item3={galleryS[9]}
-        />
-        <ImgContainer item1={galleryS[10]} />
       </Container>
+      <Galery gallery={galleryS} />
       <Container>
         <DropDown name="Технические планы проекта" className={styles.mt20} />
       </Container>

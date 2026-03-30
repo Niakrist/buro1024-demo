@@ -1,5 +1,5 @@
-import { Container, Htag, ImgContainer, NavMenu } from '@/ui';
-import { Content, Header, Recommendations, Slider } from '@/components';
+import { Container, Htag, NavMenu } from '@/ui';
+import { Content, Galery, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -25,30 +25,7 @@ export default function GostevoyDomVEnkolovoPage() {
         description={content.description}
         tags={content.tags}
       />
-      <Container>
-        <ImgContainer item1={gallery[0]} />
-        <ImgContainer item1={gallery[1]} item2={gallery[2]} />
-        <ImgContainer item1={gallery[3]} />
-        <ImgContainer
-          item1={gallery[4]}
-          item2={gallery[5]}
-          item3={gallery[6]}
-        />
-        <ImgContainer item1={gallery[7]} item2={gallery[8]} />
-        <ImgContainer
-          item1={gallery[9]}
-          item2={gallery[10]}
-          item3={gallery[11]}
-        />
-        <ImgContainer
-          item1={gallery[12]}
-          item2={gallery[13]}
-          item3={gallery[14]}
-        />
-        <ImgContainer item1={gallery[15]} item2={gallery[16]} />
-        <ImgContainer item1={gallery[17]} item2={gallery[18]} />
-        <ImgContainer item1={gallery[19]} />
-      </Container>
+      <Galery gallery={gallery} />
       <Container>
         <Htag
           color="black"

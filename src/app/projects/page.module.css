@@ -35,11 +35,24 @@
     margin: 0;
     padding: 0;
   }
+
   .pt43 {
     padding-top: 0px;
     margin-bottom: 8px;
   }
   .wrapper {
     gap: 4px;
+  }
+
+  .mt160 {
+    margin-top: 80px;
+  }
+
+  .mb40 {
+    margin-bottom: 20px;
+  }
+
+  .mb20 {
+    margin-bottom: 40px;
   }
 }

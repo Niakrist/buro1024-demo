@@ -1,5 +1,5 @@
-import { Container, Htag, ImgContainer, NavMenu } from '@/ui';
-import { Content, Header, Recommendations, Slider } from '@/components';
+import { Container, Htag, NavMenu } from '@/ui';
+import { Content, Galery, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -25,17 +25,7 @@ export default function ApartamentyPage() {
         description={content.description}
         tags={content.tags}
       />
-      <Container>
-        <ImgContainer item1={gallery[0]} item2={gallery[1]} />
-        <ImgContainer
-          item1={gallery[2]}
-          item2={gallery[3]}
-          item3={gallery[4]}
-        />
-        <ImgContainer item1={gallery[5]} item2={gallery[6]} />
-        <ImgContainer item1={gallery[7]} />
-        <ImgContainer item1={gallery[8]} item2={gallery[9]} />
-      </Container>
+      <Galery gallery={gallery} />
       <Container>
         <Htag
           color="black"

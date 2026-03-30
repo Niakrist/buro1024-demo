@@ -1,0 +1,63 @@
+.flex {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 колонок для гибкости */
+  gap: 4px;
+  width: 100%;
+}
+
+.slide {
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  grid-column: span 1;
+}
+
+.slideImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.large {
+  grid-column: span 6;
+}
+
+.medium {
+  grid-column: span 3;
+}
+
+.small {
+  grid-column: span 2;
+}
+
+@media (max-width: 1239px) {
+  .flex {
+    padding: 0 8px;
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slide {
+    flex-shrink: 0;
+    min-width: 360px;
+    height: 400px;
+    scroll-snap-align: start;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slideImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}

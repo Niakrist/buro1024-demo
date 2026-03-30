@@ -16,3 +16,9 @@
 .alignCenter {
   align-items: center;
 }
+
+@media (max-width: 1239px) {
+  .container {
+    padding: 0 8px;
+  }
+}

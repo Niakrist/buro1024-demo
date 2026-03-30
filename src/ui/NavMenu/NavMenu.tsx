@@ -4,10 +4,10 @@ import { UILink } from '../UILink/UILink';
 import styles from './NavMenu.module.css';
 import { INavMenuProps } from './NavMenu.props';
 import cn from 'classnames';
-import { useState } from 'react';
+import { useMobile } from '@/hooks';
 
 export const NavMenu = ({ color, type }: INavMenuProps) => {
-  const [isMobile, setIsMobile] = useState(true);
+  const { isMobile } = useMobile();
   return (
     <ul
       className={cn(styles.list, {
