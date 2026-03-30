@@ -9,4 +9,5 @@ export interface IHeaderProps extends React.DetailedHTMLProps<
   color: 'white' | 'black';
   className?: string;
   blackTheme?: boolean;
+  padding?: 'small' | 'standart';
 }
