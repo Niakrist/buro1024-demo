@@ -9,11 +9,9 @@ export const GalleryContainer = ({
   item2,
   item3,
   vh,
-  mb = 'big',
+  mb,
   className,
 }: IGalleryContainerProps) => {
-  console.log('className: ', className);
-
   if (item1 && item2 && item3) {
     return (
       <div

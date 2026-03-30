@@ -36,9 +36,9 @@
 }
 
 @media (max-width: 1239px) {
-  .wrapper {
+  .wrapper.wrapper {
     flex-direction: column;
-    padding: 8px;
+    padding: 0 8px;
   }
 
   .vh100 {
@@ -52,5 +52,13 @@
   .heightMobileBig {
     min-height: 610px;
     object-position: 40%;
+  }
+
+  .mediumMb.mediumMb {
+    margin-bottom: 8px;
+  }
+
+  .mediumMb.mediumMb:last-child {
+    margin-bottom: 80px;
   }
 }
