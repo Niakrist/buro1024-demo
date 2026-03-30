@@ -1,5 +1,5 @@
-import { Container, DropDown, Htag, ImgContainer, NavMenu } from '@/ui';
-import { Content, Header, Recommendations, Slider } from '@/components';
+import { Container, DropDown, Htag, NavMenu } from '@/ui';
+import { Content, Galery, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -25,11 +25,7 @@ export default function ChastnyyDomVRoshchinoPage() {
         description={content.description}
         tags={content.tags}
       />
-      <Container>
-        <ImgContainer item1={gallery[0]} />
-        <ImgContainer item1={gallery[1]} />
-        <ImgContainer item1={gallery[2]} />
-      </Container>
+      <Galery gallery={gallery} />
       <Container>
         <DropDown name="Технические планы проекта" className={styles.mt80} />
       </Container>

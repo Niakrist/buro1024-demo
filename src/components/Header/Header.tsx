@@ -4,6 +4,7 @@ import styles from './Header.module.css';
 import { IHeaderProps } from './Header.props';
 import cn from 'classnames';
 import { useEffect, useState } from 'react';
+import { useMobile } from '@/hooks';
 
 export const Header = ({
   children,
@@ -14,7 +15,7 @@ export const Header = ({
   padding = 'standart',
   ...props
 }: IHeaderProps) => {
-  const [isMobile, setIsMobile] = useState(true);
+  const { isMobile } = useMobile();
   const [isShow, setIsShow] = useState(false);
 
   const handleOpen = () => {

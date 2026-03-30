@@ -6,7 +6,6 @@ export { Htag } from './Htag/Htag';
 export { ImageUI } from './ImageUI/ImageUI';
 export { GalleryContainer } from './GalleryContainer/GalleryContainer';
 export { NavMenu } from './NavMenu/NavMenu';
-export { ImgContainer } from './ImgContainer/ImgContainer';
 export { DropDown } from './DropDown/DropDown';
 export { TagList } from './TagList/TagList';
 export { Text } from './Text/Text';
