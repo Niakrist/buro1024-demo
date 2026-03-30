@@ -17,7 +17,7 @@ export default function ChastnyyDomVRoshchinoPage() {
   return (
     <>
       <Header absolute color="white">
-        <NavMenu color="white" />
+        <NavMenu color="white" type="header" />
       </Header>
       <Slider slides={slides} />
       <Content

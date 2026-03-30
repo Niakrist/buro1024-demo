@@ -5,7 +5,7 @@ import { OFFICIAL, REQUISITES } from '@/constants';
 
 export const FooterBottom = () => {
   return (
-    <Container flex>
+    <Container flex className={styles.container}>
       <div className={styles.left}>
         <ul className={styles.list}>
           <li className={styles.item}>{REQUISITES.IP}</li>
@@ -26,7 +26,7 @@ export const FooterBottom = () => {
         </ul>
       </div>
 
-      <ul className={styles.list}>
+      <ul className={styles.listInfo}>
         <li>
           <UILink color="black" size="small" href="#">
             Дизайн сайта
