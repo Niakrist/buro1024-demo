@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Recommendations.module.css';
 import { IProject } from '@/types';
 import Link from 'next/link';

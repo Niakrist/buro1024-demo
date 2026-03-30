@@ -1,6 +1,6 @@
 import { Container, Htag, NavMenu } from '@/ui';
 import { Content, Galery, Header, Recommendations, Slider } from '@/components';
-import { projects } from '@/data';
+import { PROJECTS_DATA } from '@/data';
 import {
   adapterContent,
   adapterGallery,
@@ -10,9 +10,9 @@ import styles from '../page.module.css';
 import cn from 'classnames';
 
 export default function LAPage() {
-  const slides = adapterSliderForProject(projects[2]);
-  const content = adapterContent(projects[2]);
-  const gallery = adapterGallery(projects[2]);
+  const slides = adapterSliderForProject(PROJECTS_DATA[2]);
+  const content = adapterContent(PROJECTS_DATA[2]);
+  const gallery = adapterGallery(PROJECTS_DATA[2]);
 
   return (
     <>
@@ -35,7 +35,7 @@ export default function LAPage() {
         >
           Другие проекты
         </Htag>
-        <Recommendations projects={projects} />
+        <Recommendations projects={PROJECTS_DATA} />
       </Container>
     </>
   );

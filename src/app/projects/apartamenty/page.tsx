@@ -1,6 +1,6 @@
 import { Container, Htag, NavMenu } from '@/ui';
 import { Content, Galery, Header, Recommendations, Slider } from '@/components';
-import { projects } from '@/data';
+import { PROJECTS_DATA } from '@/data';
 import {
   adapterContent,
   adapterGallery,
@@ -10,9 +10,9 @@ import styles from '../page.module.css';
 import cn from 'classnames';
 
 export default function ApartamentyPage() {
-  const slides = adapterSliderForProject(projects[6]);
-  const content = adapterContent(projects[6]);
-  const gallery = adapterGallery(projects[6]);
+  const slides = adapterSliderForProject(PROJECTS_DATA[6]);
+  const content = adapterContent(PROJECTS_DATA[6]);
+  const gallery = adapterGallery(PROJECTS_DATA[6]);
 
   return (
     <>
@@ -35,7 +35,7 @@ export default function ApartamentyPage() {
         >
           Другие проекты
         </Htag>
-        <Recommendations projects={projects} />
+        <Recommendations projects={PROJECTS_DATA} />
       </Container>
     </>
   );
