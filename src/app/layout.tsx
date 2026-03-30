@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { CookiePortal } from '@/ui';
 
 // const geistSans = Geist({
 //   variable: '--font-geist-sans',
@@ -25,7 +26,8 @@ export default function RootLayout({
     <html lang="ru">
       <body>
         {children}
-        <div id="portal-root" />
+        <div id="cookie-portal" />
+        {/* <CookiePortal /> */}
       </body>
     </html>
   );

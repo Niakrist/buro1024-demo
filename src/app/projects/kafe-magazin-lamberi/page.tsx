@@ -1,5 +1,5 @@
-import { Container, Htag, ImgContainer } from '@/ui';
-import { Content, Recommendations, Slider } from '@/components';
+import { Container, Htag, ImgContainer, NavMenu } from '@/ui';
+import { Content, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -15,7 +15,10 @@ export default function KafeMagazinLamberiPage() {
   const gallery = adapterGallery(projects[12]);
 
   return (
-    <div className={styles.page}>
+    <>
+      <Header absolute color="white">
+        <NavMenu color="white" />
+      </Header>
       <Slider slides={slides} />
       <Content
         title={content.title}
@@ -40,6 +43,6 @@ export default function KafeMagazinLamberiPage() {
         </Htag>
         <Recommendations projects={projects} />
       </Container>
-    </div>
+    </>
   );
 }
