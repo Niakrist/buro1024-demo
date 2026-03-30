@@ -1,5 +1,5 @@
-import { Container, Htag, ImgContainer, NavMenu } from '@/ui';
-import { Content, Header, Recommendations, Slider } from '@/components';
+import { Container, Htag, NavMenu } from '@/ui';
+import { Content, Galery, Header, Recommendations, Slider } from '@/components';
 import { projects } from '@/data';
 import {
   adapterContent,
@@ -25,11 +25,7 @@ export default function BlagoustroystvoDvoraVCentrePeterburgaPage() {
         description={content.description}
         tags={content.tags}
       />
-      <Container>
-        <ImgContainer item1={gallery[0]} />
-        <ImgContainer item1={gallery[1]} item2={gallery[2]} />
-        <ImgContainer item1={gallery[3]} />
-      </Container>
+      <Galery gallery={gallery} />
       <Container>
         <Htag
           color="black"

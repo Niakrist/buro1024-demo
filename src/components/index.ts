@@ -4,3 +4,4 @@ export { Footer } from './Footer/Footer';
 export { Content } from './Content/Content';
 export { Recommendations } from './Recommendations/Recommendations';
 export { Publication } from './Publication/Publication';
+export { Galery } from './Galery/Galery';
