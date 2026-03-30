@@ -5,8 +5,8 @@ export const IconLogo = ({ className, ...props }: IIconProps) => {
     <svg
       {...props}
       className={className}
-      width="150"
-      height="60"
+      width="0"
+      height="0"
       viewBox="0 0 150 60"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"

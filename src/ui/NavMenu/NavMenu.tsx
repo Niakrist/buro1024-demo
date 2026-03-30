@@ -7,7 +7,7 @@ export const NavMenu = ({ color }: INavMenuProps) => {
   return (
     <ul className={styles.list}>
       {MENU.map((item) => (
-        <UILink href={item.url} key={item.url} color={color}>
+        <UILink href={item.url} key={item.url} color={color} size="navLink">
           {item.name}
         </UILink>
       ))}
