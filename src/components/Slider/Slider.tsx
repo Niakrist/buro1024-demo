@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import styles from './Slider.module.css';
-import { Icon, ImageUI } from '@/ui';
+import { BubbleList, Icon, ImageUI } from '@/ui';
 import { ISlideProps } from './Slider.props';
 
 export const Slider = ({ slides }: ISlideProps) => {
@@ -13,6 +13,10 @@ export const Slider = ({ slides }: ISlideProps) => {
 
   const goToNext = () => {
     setCurrentIndex((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
+
+  const handleClickSlide = (index: number) => {
+    setCurrentIndex(index);
   };
 
   return (
@@ -32,6 +36,11 @@ export const Slider = ({ slides }: ISlideProps) => {
             </div>
           );
         })}
+        <BubbleList
+          items={slides}
+          currentIndex={currentIndex}
+          onBubbleClick={handleClickSlide}
+        />
       </div>
 
       <button onClick={goToNext} className={styles.nextButton}>
