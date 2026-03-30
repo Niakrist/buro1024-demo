@@ -27,7 +27,7 @@ export const Button = ({
       [styles.big]: size === 'big',
       [styles.full]: size === 'full',
       [styles.fv400]: fontWeight === 'fv400',
-      [styles.fv405]: fontWeight === 'fv500',
+      [styles.fv500]: fontWeight === 'fv500',
       [styles.uppercase]: uppercase,
     },
     className,

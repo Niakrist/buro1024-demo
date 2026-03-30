@@ -23,6 +23,7 @@ export const UILink = ({
           [styles.colorBlack]: color === 'black',
           [styles.underline]: underline === true,
           [styles.small]: size === 'small',
+          [styles.navLink]: size === 'navLink',
         },
         className,
       )}

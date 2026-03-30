@@ -4,6 +4,7 @@
   font-size: 16px;
   font-family: var(--font-family);
 }
+
 .colorWhite {
   color: var(--white-color);
   opacity: 1;
@@ -30,4 +31,11 @@
 
 .small {
   font-size: 12px;
+}
+
+@media (max-width: 1239px) {
+  .navLink {
+    font-weight: 500;
+    font-size: 30px;
+  }
 }
