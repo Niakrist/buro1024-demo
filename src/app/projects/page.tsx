@@ -9,7 +9,7 @@ export default function ProjectsPage() {
       <Header color="black">
         <NavMenu color="black" type="header" />
       </Header>
-      <Container relative>
+      <Container relative className={styles.container}>
         <GalleryContainer
           item1={projects[0]}
           className={styles.pt43}
@@ -28,7 +28,11 @@ export default function ProjectsPage() {
           className={styles.wrapper}
           mb="medium"
         />
-        <GalleryContainer className={styles.mb} item1={projects[7]} />
+        <GalleryContainer
+          className={styles.mb}
+          item1={projects[7]}
+          mb="medium"
+        />
         <GalleryContainer
           item1={projects[3]}
           item2={projects[11]}
@@ -40,6 +44,7 @@ export default function ProjectsPage() {
           item1={projects[8]}
           item2={projects[6]}
           className={styles.wrapper}
+          mb="medium"
         />
       </Container>
     </>
