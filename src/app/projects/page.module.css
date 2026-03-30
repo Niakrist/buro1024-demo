@@ -1,6 +1,5 @@
 .wrapper {
   gap: 40px;
-  margin-bottom: 63px;
 }
 
 .main {
@@ -13,10 +12,6 @@
 
 .mb40 {
   margin-bottom: 40px;
-}
-
-.mb {
-  margin-bottom: 63px;
 }
 
 .mt20 {
@@ -33,4 +28,18 @@
 
 .pt43 {
   padding-top: 43px;
+}
+
+@media (max-width: 1239px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .pt43 {
+    padding-top: 0px;
+    margin-bottom: 8px;
+  }
+  .wrapper {
+    gap: 4px;
+  }
 }

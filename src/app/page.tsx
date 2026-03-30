@@ -21,9 +21,19 @@ export default function Home() {
           масштаба и сложности, соединяя эстетику, функциональность и характер
         </p>
       </Container>
-      <GalleryContainer vh="vh100" item1={projects[1]} item2={projects[2]} />
-      <GalleryContainer vh="vh100" item1={projects[5]} />
-      <GalleryContainer vh="vh100" item1={projects[4]} item2={projects[6]} />
+      <GalleryContainer
+        vh="vh100"
+        mb="big"
+        item1={projects[1]}
+        item2={projects[2]}
+      />
+      <GalleryContainer vh="vh100" mb="big" item1={projects[5]} />
+      <GalleryContainer
+        vh="vh100"
+        mb="big"
+        item1={projects[4]}
+        item2={projects[6]}
+      />
       <Footer />
     </>
   );
