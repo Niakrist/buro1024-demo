@@ -16,7 +16,7 @@ const obj = {
   '12': 're-00',
 };
 
-export const projects = [
+export const PROJECTS_DATA = [
   {
     name: 're-039',
     img: '/re-039.jpg',
