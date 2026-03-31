@@ -1,6 +1,6 @@
 import { Container, Htag, NavMenu, Text } from '@/ui';
 import styles from './page.module.css';
-import { Header } from '@/components';
+import { Footer, Header } from '@/components';
 
 export default function CookiePolicyPage() {
   return (
@@ -157,6 +157,7 @@ export default function CookiePolicyPage() {
           re.space.arch@ya.ru.
         </Text>
       </Container>
+      <Footer />
     </>
   );
 }
