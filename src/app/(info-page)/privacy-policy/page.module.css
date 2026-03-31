@@ -19,3 +19,15 @@
 .fw700 {
   font-weight: 700;
 }
+
+@media (max-width: 1239px) {
+  .container {
+    padding-top: 20px;
+    margin: 0 0 80px;
+    max-width: 100%;
+  }
+
+  .mb40 {
+    margin-bottom: 20px;
+  }
+}
