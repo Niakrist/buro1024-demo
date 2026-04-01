@@ -1,20 +1,26 @@
-import React from 'react';
-
 import styles from './MenuBurger.module.css';
 import cn from 'classnames';
+import { IMenuBurgerProps } from './MenuBurger.props';
 
-interface IMenuBurgerProps {
-  isShow: boolean;
-  onClick: () => void;
-}
-
-export const MenuBurger = ({ isShow, onClick }: IMenuBurgerProps) => {
+export const MenuBurger = ({
+  isShow,
+  onClick,
+  isNotFound,
+}: IMenuBurgerProps) => {
   return (
     <button
       onClick={onClick}
-      className={cn(styles.menuBurger, { [styles.isActive]: isShow })}
+      className={cn(styles.menuBurger, {
+        [styles.isNotFoundBtn]: isNotFound,
+        [styles.isActive]: isShow,
+      })}
     >
-      <span className={cn(styles.span, { [styles.isActive]: isShow })} />
+      <span
+        className={cn(styles.span, {
+          [styles.isNotFoundSpan]: isNotFound,
+          [styles.isActive]: isShow,
+        })}
+      />
     </button>
   );
 };

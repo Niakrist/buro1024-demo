@@ -8,7 +8,7 @@
   grid-template-areas:
     'title tags'
     'texts tags';
-  grid-template-columns: 743px 1fr;
+  grid-template-columns: minmax(700px 995px) 1fr;
   column-gap: 20px;
   width: 100%;
 }

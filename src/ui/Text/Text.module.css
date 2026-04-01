@@ -34,3 +34,9 @@
 .fw700 {
   font-weight: 700;
 }
+
+@media (max-width: 1239px) {
+  .veryBig {
+    font-size: 28px;
+  }
+}

@@ -17,12 +17,12 @@
 
 .wrapper {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .wrapperOne {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   margin-bottom: 80px;
 }
 
@@ -30,27 +30,4 @@
   display: flex;
   gap: 4px;
   margin-bottom: 80px;
-}
-
-.bgBlack {
-  padding-top: 40px;
-  background-color: var(--black-color);
-}
-
-.mb32 {
-  margin-bottom: 32px;
-}
-
-.mb40 {
-  margin-bottom: 40px;
-}
-
-.content {
-  max-width: 1097px;
-}
-
-@media (max-width: 1239px) {
-  .title {
-    margin-bottom: 20px;
-  }
 }
