@@ -1,8 +1,10 @@
+'use client';
 import { IPublication } from '@/types/publication.interface';
 import React from 'react';
 import styles from './Publication.module.css';
 import { Button, Htag, Text } from '@/ui';
 import cn from 'classnames';
+import { useMobile } from '@/hooks';
 
 export interface IPublicationProps extends React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
@@ -19,20 +21,31 @@ export const Publication = ({
   className,
   buttonName,
 }: IPublicationProps) => {
+  const { isMobile } = useMobile();
+
   switch (type) {
     case 'big':
       return (
         <div className={cn(styles.wrapper, styles.mb120)}>
           <img
-            className={styles.img}
+            className={cn(styles.img, styles.bigImg)}
             src={publication.img}
             alt={publication.title}
           />
           <div className={styles.content}>
-            <Htag color="white" tag="h2" size="medium" className={styles.mb16}>
+            <Htag
+              color={isMobile ? 'black' : 'white'}
+              tag="h2"
+              size="medium"
+              className={styles.mb16}
+            >
               {publication.title}
             </Htag>
-            <Text size="medium" color="white" className={styles.mb32}>
+            <Text
+              size="medium"
+              color={isMobile ? 'black' : 'white'}
+              className={styles.textBig}
+            >
               {publication.description}
             </Text>
             <Button
@@ -50,14 +63,14 @@ export const Publication = ({
       return (
         <div className={cn(styles.wrapper, className)}>
           <img
-            className={cn(styles.img, styles.mb32)}
+            className={cn(styles.img, styles.mb32, styles.mediumImg)}
             src={publication.img}
             alt={publication.title}
           />
           <Htag color="black" tag="h2" size="medium" className={styles.mb16}>
             {publication.title}
           </Htag>
-          <Text size="medium" color="black" className={styles.mb32}>
+          <Text size="medium" color="black" className={styles.textMedium}>
             {publication.description}
           </Text>
           <Button
@@ -86,11 +99,7 @@ export const Publication = ({
           >
             {publication.title}
           </Htag>
-          <Text
-            size="medium"
-            color="black"
-            className={cn(styles.mb32, styles.testSmall)}
-          >
+          <Text size="medium" color="black" className={styles.textSmall}>
             {publication.description}
           </Text>
           <Button
