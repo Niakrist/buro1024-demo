@@ -21,7 +21,7 @@ export const Publication = ({
   className,
   buttonName,
 }: IPublicationProps) => {
-  const { isMobile } = useMobile();
+  const isMobile = useMobile();
 
   switch (type) {
     case 'big':

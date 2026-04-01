@@ -20,6 +20,10 @@
   z-index: 150;
 }
 
+.isNotFoundBtn {
+  background-color: var(--white-color);
+}
+
 .span {
   display: block;
   width: 100%;
@@ -72,4 +76,16 @@
   transform: rotate(-45deg);
   background-color: var(--black-color);
   border-radius: 100%;
+}
+
+.isNotFoundSpan {
+  background-color: var(--black-color);
+}
+
+.isNotFoundSpan::before {
+  background-color: var(--black-color);
+}
+
+.isNotFoundSpan::after {
+  background-color: var(--black-color);
 }

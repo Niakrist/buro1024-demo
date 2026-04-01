@@ -12,10 +12,11 @@ export const Header = ({
   absolute = false,
   className,
   blackTheme = false,
+  isNotFound = false,
   padding = 'standart',
   ...props
 }: IHeaderProps) => {
-  const { isMobile } = useMobile();
+  const isMobile = useMobile();
   const [isShow, setIsShow] = useState(false);
 
   const handleOpen = () => {
@@ -47,11 +48,17 @@ export const Header = ({
       )}
       {...props}
     >
-      <UILink color={color} href="/" className={styles.link}>
+      <UILink color={isShow ? 'white' : color} href="/" className={styles.link}>
         <Icon name="iconLogo" className={styles.iconLogo} />
       </UILink>
 
-      {isMobile && <MenuBurger onClick={handleOpen} isShow={isShow} />}
+      {isMobile && (
+        <MenuBurger
+          onClick={handleOpen}
+          isShow={isShow}
+          isNotFound={isNotFound}
+        />
+      )}
       <nav className={cn(styles.nav, { [styles.mobNav]: isShow })}>
         {children}
 
