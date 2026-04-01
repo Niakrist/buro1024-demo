@@ -40,3 +40,31 @@
 .mb32 {
   margin-bottom: 32px;
 }
+
+@media (max-width: 1239px) {
+  .container {
+    margin: 0 0 20px;
+    padding: 0 8px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .journal {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .journalImg {
+    min-height: 230px;
+    object-fit: cover;
+  }
+  .journalImg + .journalImg {
+    margin-top: 20px;
+  }
+}

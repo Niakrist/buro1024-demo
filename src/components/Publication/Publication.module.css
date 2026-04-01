@@ -25,6 +25,12 @@
 .mb32 {
   margin-bottom: 32px;
 }
+.textBig {
+  margin-bottom: 32px;
+}
+.textMedium {
+  margin-bottom: 32px;
+}
 
 .content {
   max-width: 800px;
@@ -42,6 +48,48 @@
   max-width: 360px;
 }
 
-.testSmall {
+.textSmall {
   max-width: 586px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1239px) {
+  .content {
+    margin-top: 20px;
+    position: static;
+  }
+
+  .bigImg {
+    min-height: 194px;
+    object-fit: cover;
+  }
+
+  .mb32 {
+    margin-bottom: 40px;
+  }
+  .textBig {
+    margin-bottom: 40px;
+  }
+
+  .textSmall.textSmall {
+    margin-bottom: 30px;
+  }
+
+  .mb120 {
+    margin-bottom: 80px;
+  }
+
+  .mediumImg {
+    min-height: 430px;
+    object-fit: cover;
+  }
+  .mb32 {
+    margin-bottom: 20px;
+  }
+
+  .imgSmall {
+    width: 100%;
+    min-height: 194px;
+    object-fit: cover;
+  }
 }
