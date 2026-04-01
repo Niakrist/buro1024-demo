@@ -9,6 +9,8 @@
   display: block;
   border-radius: 4px;
   margin-bottom: 40px;
+  max-height: 788px;
+  object-fit: cover;
 }
 
 .mb16 {
@@ -25,7 +27,8 @@
 }
 
 .contacts {
-  max-width: 530px;
+  /* max-width: 530px; */
+  max-width: 560px;
 }
 
 .buttons {
@@ -33,5 +36,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 17px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin: 0 0 80px;
+  }
+
+  .img {
+    min-height: 430px;
+    object-fit: cover;
+    object-position: 72%;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
