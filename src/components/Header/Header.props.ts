@@ -10,4 +10,5 @@ export interface IHeaderProps extends React.DetailedHTMLProps<
   className?: string;
   blackTheme?: boolean;
   padding?: 'small' | 'standart';
+  isNotFound?: boolean;
 }

@@ -1,0 +1,43 @@
+.blackHeader {
+  background-color: var(--black-color);
+}
+
+.blackMain {
+  padding: 40px 40px;
+  background-color: var(--black-color);
+}
+
+.text404 {
+  margin-bottom: 25px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.content {
+  max-width: 1097px;
+}
+
+@media (max-width: 1239px) {
+  .content {
+    width: 100%;
+  }
+
+  .blackMain {
+    padding: 60px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .text404 {
+    margin-bottom: 10px;
+  }
+
+  .button {
+    text-align: center;
+    display: block;
+    bottom: 8px;
+  }
+}

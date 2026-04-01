@@ -7,7 +7,7 @@ import cn from 'classnames';
 import { useMobile } from '@/hooks';
 
 export const NavMenu = ({ color, type }: INavMenuProps) => {
-  const { isMobile } = useMobile();
+  const isMobile = useMobile();
   return (
     <ul
       className={cn(styles.list, {

@@ -50,7 +50,7 @@
 
 .textSmall {
   max-width: 586px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 @media (max-width: 1239px) {
