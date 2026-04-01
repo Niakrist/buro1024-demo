@@ -1,3 +1,8 @@
+.tagList {
+  display: flex;
+  gap: 16px;
+}
+
 .tag {
   font-weight: 400;
   font-size: 16px;
@@ -10,4 +15,14 @@
 
 .blackColor {
   color: var(--black-color);
+}
+
+@media (max-width: 1239px) {
+  .tagList {
+    flex-wrap: wrap;
+    gap: 4px 8px;
+  }
+  .tag:nth-child(2) {
+    flex-basis: 100%;
+  }
 }

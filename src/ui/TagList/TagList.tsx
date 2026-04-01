@@ -16,7 +16,7 @@ export const TagList = ({ tags, color, className }: ITagListProps) => {
       )}
     >
       {tags.map((tag) => (
-        <Tag className={styles.tag} key={tag}>
+        <Tag className={cn(styles.tag)} key={tag}>
           {tag}
         </Tag>
       ))}

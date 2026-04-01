@@ -14,8 +14,6 @@
 
 .list {
   margin-top: 8px;
-  display: flex;
-  gap: 16px;
 }
 
 .item {
@@ -33,7 +31,5 @@
 
   .list {
     margin-top: 12px;
-    flex-direction: column;
-    gap: 4px;
   }
 }

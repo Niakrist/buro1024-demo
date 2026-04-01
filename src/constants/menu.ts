@@ -3,5 +3,5 @@ export const MENU = [
   { name: 'Услуги', url: 'services' },
   { name: 'Публикации', url: 'publications' },
   { name: 'О нас', url: 'about' },
-  { name: 'Контакты', url: 'contacts' },
+  // { name: 'Контакты', url: 'contacts' },
 ];

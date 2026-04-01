@@ -1,6 +1,6 @@
 import { Button, Container, Htag, NavMenu, Text } from '@/ui';
 import styles from './page.module.css';
-import { Header } from '@/components';
+import { Footer, Header } from '@/components';
 
 export default function AboutPage() {
   return (
@@ -12,7 +12,7 @@ export default function AboutPage() {
         <Htag color="black" size="big" tag="h1" hidden>
           Контакты
         </Htag>
-        <img className={styles.img} src="about.jpg" alt={'О нас'} />
+        <img className={styles.img} src="about-mini.jpg" alt={'О нас'} />
         <div className={styles.content}>
           <Htag color="black" size="medium" tag="h2" className={styles.mb16}>
             О нас
@@ -55,6 +55,7 @@ export default function AboutPage() {
           </div>
         </div>
       </Container>
+      <Footer />
     </>
   );
 }
