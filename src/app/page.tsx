@@ -17,7 +17,7 @@ export default function Home() {
       >
         <NavMenu color="white" type="header" />
       </Header>
-      <SliderSwitch slides={slides} />
+      <SliderSwitch slides={slides} type="mobileMain" />
       <Container className={styles.container}>
         <Htag className={styles.title} color="black" tag="h2" size="medium">
           Уникальные пространства для уникальных людей
@@ -32,6 +32,7 @@ export default function Home() {
         mb="big"
         item1={PROJECTS_DATA[1]}
         item2={PROJECTS_DATA[2]}
+        className={styles.wrapperGallery}
       />
       <GalleryContainer vh="vh100" mb="big" item1={PROJECTS_DATA[5]} />
       <GalleryContainer
@@ -39,6 +40,7 @@ export default function Home() {
         mb="big"
         item1={PROJECTS_DATA[4]}
         item2={PROJECTS_DATA[6]}
+        className={styles.wrapperGallery}
       />
       <Footer />
     </>

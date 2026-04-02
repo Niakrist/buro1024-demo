@@ -1,16 +1,5 @@
-import React from 'react';
-
-export interface IImgContaineProps extends React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
-> {
-  item1: IProject;
-  item2?: IProject;
-  item3?: IProject;
-}
-
 import styles from './ImgContainer.module.css';
-import { IProject } from '@/types';
+import { IImgContaineProps } from './ImgContainer.props';
 
 export const ImgContainer = ({ item1, item2, item3 }: IImgContaineProps) => {
   if (item1 && item2 && item3) {

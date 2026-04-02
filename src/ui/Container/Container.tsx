@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './Container.module.css';
 import { IContainerProps } from './Container.props';
 

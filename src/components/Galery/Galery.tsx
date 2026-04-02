@@ -1,12 +1,7 @@
-import { IGallery } from '@/types/project.interface';
-import React from 'react';
 import styles from './Galery.module.css';
 import cn from 'classnames';
 import { Container } from '@/ui';
-
-export interface IGalleryProps {
-  gallery: IGallery[];
-}
+import { IGalleryProps } from './Galery.props';
 
 export const Galery = ({ gallery }: IGalleryProps) => {
   return (

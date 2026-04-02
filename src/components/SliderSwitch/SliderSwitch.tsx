@@ -2,17 +2,13 @@
 import { useMobile } from '@/hooks';
 import { SliderMobile } from '../SliderMobile/SliderMobile';
 import { Slider } from '../Slider/Slider';
-import { ISlide } from '@/types';
+import { ISliderSwitchProsp } from './SliderSwitch.props';
 
-interface ISliderSwitchProsp {
-  slides: ISlide[];
-}
-
-export const SliderSwitch = ({ slides }: ISliderSwitchProsp) => {
+export const SliderSwitch = ({ slides, type }: ISliderSwitchProsp) => {
   const isMobile = useMobile();
 
   return isMobile ? (
-    <SliderMobile slides={slides} duration={7000} />
+    <SliderMobile slides={slides} duration={7000} type={type} />
   ) : (
     <Slider slides={slides} />
   );

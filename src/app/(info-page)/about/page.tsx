@@ -1,6 +1,7 @@
 import { Button, Container, Htag, NavMenu, Text } from '@/ui';
 import styles from './page.module.css';
 import { Footer, Header } from '@/components';
+import { EMAIL, PHONE_TEL } from '@/constants';
 
 export default function AboutPage() {
   return (
@@ -43,15 +44,30 @@ export default function AboutPage() {
             вопрос то лучше позвонить или написать в телеграм.
           </Text>
           <div className={styles.buttons}>
-            <Button bg="black" color="white" size="small">
+            <Button
+              bg="black"
+              color="white"
+              size="small"
+              href={`tel:${PHONE_TEL}`}
+            >
               Позвонить
             </Button>
-            <Button bg="black" color="white" size="small">
+            <Button
+              bg="black"
+              color="white"
+              size="small"
+              href={`mailto:${EMAIL}`}
+            >
               Написать на почту
             </Button>
-            <Button bg="black" color="white" size="small">
+            <a
+              className={styles.telegram}
+              href={`https://t.me/${PHONE_TEL}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Написать в телеграм
-            </Button>
+            </a>
           </div>
         </div>
       </Container>

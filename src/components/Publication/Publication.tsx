@@ -1,20 +1,10 @@
 'use client';
-import { IPublication } from '@/types/publication.interface';
-import React from 'react';
 import styles from './Publication.module.css';
 import { Button, Htag, Text } from '@/ui';
 import cn from 'classnames';
 import { useMobile } from '@/hooks';
+import { IPublicationProps } from './Publication.props';
 
-export interface IPublicationProps extends React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
-> {
-  publication: IPublication;
-  type: 'small' | 'medium' | 'big';
-  className?: string;
-  buttonName: string;
-}
 export const Publication = ({
   publication,
   type,

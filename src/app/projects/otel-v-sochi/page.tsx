@@ -4,7 +4,6 @@ import {
   Galery,
   Header,
   Recommendations,
-  Slider,
   SliderSwitch,
 } from '@/components';
 import { PROJECTS_DATA } from '@/data';

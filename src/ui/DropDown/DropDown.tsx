@@ -1,16 +1,9 @@
 'use client';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './DropDown.module.css';
 import { Icon } from '../Icon/Icon';
 import cn from 'classnames';
-
-export interface IDropDownProps extends React.DetailedHTMLProps<
-  React.ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
-> {
-  name: string;
-  className?: string;
-}
+import { IDropDownProps } from './DropDown.props';
 
 export const DropDown = ({ name, className, ...props }: IDropDownProps) => {
   const [isShow, setIsShow] = useState(false);

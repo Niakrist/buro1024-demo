@@ -15,21 +15,8 @@
   color: var(--black-color);
 }
 
-.wrapper {
-  position: relative;
-  /* height: 100vh; */
-}
-
-.wrapperOne {
-  position: relative;
-  /* height: 100vh; */
-  margin-bottom: 80px;
-}
-
-.flex {
-  display: flex;
-  gap: 4px;
-  margin-bottom: 80px;
+.wrapperGallery {
+  padding: 0 4px;
 }
 
 @media (max-width: 1239px) {
@@ -39,5 +26,8 @@
 
   .mainPage.mainPage {
     padding: 36px 8px 20px 8px;
+  }
+  .wrapperGallery {
+    padding: 0 8px;
   }
 }

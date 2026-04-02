@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { CookiePortal } from '@/ui';
+import styles from './layout.module.css';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body>
+      <body className={styles.body}>
         {children}
         <div id="cookie-portal" />
         <CookiePortal />

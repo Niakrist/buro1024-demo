@@ -1,6 +1,6 @@
 .flex {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 колонок для гибкости */
+  grid-template-columns: repeat(6, 1fr);
   gap: 4px;
   width: 100%;
 }

@@ -10,4 +10,5 @@ export interface IGalleryContainerProps extends React.DetailedHTMLProps<
   className?: string;
   mb: 'small' | 'medium' | 'big';
   vh?: 'vh100';
+  type?: 'mobileMain' | 'mobileProjects';
 }

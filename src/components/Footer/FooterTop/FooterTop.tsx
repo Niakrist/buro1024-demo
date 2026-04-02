@@ -1,6 +1,6 @@
-import { Container, Icon, NavMenu, UILink } from '@/ui';
+import { Container, Icon, NavMenu } from '@/ui';
 import styles from './FooterTop.module.css';
-import { EMAIL, PHONE, TELEGRAM, WHATSAPP } from '@/constants';
+import { EMAIL, PHONE, PHONE_TEL, TELEGRAM, WHATSAPP } from '@/constants';
 
 export const FooterTop = () => {
   return (
@@ -18,18 +18,28 @@ export const FooterTop = () => {
       <div className={styles.right}>
         <NavMenu color="black" type="footer" />
         <div className={styles.contact}>
-          <UILink color="black" className={styles.link} href="">
+          <a href={`tel:${PHONE_TEL}`} className={styles.link}>
             {PHONE}
-          </UILink>
-          <UILink color="black" className={styles.link} href="">
+          </a>
+          <a href={`mailto:${EMAIL}`} className={styles.link}>
             {EMAIL}
-          </UILink>
-          <UILink color="black" className={styles.link} href="">
+          </a>
+          <a
+            href={`https://t.me/${PHONE_TEL}`}
+            className={styles.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {TELEGRAM.name}
-          </UILink>
-          <UILink color="black" className={styles.link} href="">
+          </a>
+          <a
+            href={`https://wa.me/${PHONE_TEL}`}
+            className={styles.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {WHATSAPP.name}
-          </UILink>
+          </a>
         </div>
       </div>
     </Container>
