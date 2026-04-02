@@ -18,6 +18,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 4px;
 }
 
 .large {
@@ -34,17 +35,18 @@
 
 @media (max-width: 1239px) {
   .flex {
-    padding: 0 8px;
+    padding: 0;
     width: 100%;
     overflow-x: auto;
     display: flex;
     flex-wrap: nowrap;
-    gap: 8px;
+    gap: 0;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
   }
 
   .slide {
+    padding-left: 8px;
     flex-shrink: 0;
     min-width: 360px;
     height: 400px;

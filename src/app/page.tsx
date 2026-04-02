@@ -1,17 +1,23 @@
 import { Container, GalleryContainer, Htag, NavMenu } from '@/ui';
-import { Footer, Header, Slider } from '@/components';
+import { Footer, Header, SliderSwitch } from '@/components';
 import { PROJECTS_DATA } from '@/data';
 import { adapterSlider } from '@/utils';
 import styles from './page.module.css';
 
 export default function Home() {
   const slides = adapterSlider(PROJECTS_DATA);
+
   return (
     <>
-      <Header padding="small" absolute color="white">
+      <Header
+        padding="small"
+        absolute
+        color="white"
+        className={styles.mainPage}
+      >
         <NavMenu color="white" type="header" />
       </Header>
-      <Slider slides={slides} />
+      <SliderSwitch slides={slides} />
       <Container className={styles.container}>
         <Htag className={styles.title} color="black" tag="h2" size="medium">
           Уникальные пространства для уникальных людей

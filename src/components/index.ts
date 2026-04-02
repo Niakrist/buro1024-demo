@@ -5,3 +5,5 @@ export { Content } from './Content/Content';
 export { Recommendations } from './Recommendations/Recommendations';
 export { Publication } from './Publication/Publication';
 export { Galery } from './Galery/Galery';
+export { SliderMobile } from './SliderMobile/SliderMobile';
+export { SliderSwitch } from './SliderSwitch/SliderSwitch';

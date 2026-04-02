@@ -31,3 +31,13 @@
   gap: 4px;
   margin-bottom: 80px;
 }
+
+@media (max-width: 1239px) {
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .mainPage.mainPage {
+    padding: 36px 8px 20px 8px;
+  }
+}
