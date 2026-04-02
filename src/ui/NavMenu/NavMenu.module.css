@@ -19,4 +19,7 @@
   .footer {
     gap: 20px;
   }
+  .navMobile {
+    line-height: 1.1;
+  }
 }

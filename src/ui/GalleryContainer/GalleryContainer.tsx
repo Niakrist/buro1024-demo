@@ -54,7 +54,7 @@ export const GalleryContainer = ({
     return (
       <div
         className={cn(
-          styles.wrapper,
+          styles.wrapperMedium,
           { [styles.smallMb]: mb === 'small' },
           { [styles.mediumMb]: mb === 'medium' },
           { [styles.bigMb]: mb === 'big' },

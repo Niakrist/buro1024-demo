@@ -12,3 +12,4 @@ export { Text } from './Text/Text';
 export { CookiePortal } from './CookiePortal/CookiePortal';
 export { BubbleList } from './BubbleList/BubbleList';
 export { MenuBurger } from './MenuBurger/MenuBurger';
+export { LineList } from './LineList//LineList';
