@@ -27,7 +27,6 @@
 }
 
 .contacts {
-  /* max-width: 530px; */
   max-width: 560px;
 }
 
@@ -37,6 +36,22 @@
   align-items: center;
   justify-content: space-between;
   gap: 17px;
+}
+
+.telegram {
+  padding: 9px 16px 8px;
+  border-radius: 4px;
+  background-color: var(--black-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white-color);
+
+  transition: border-radius 0.3s;
+}
+
+.telegram:hover {
+  border-radius: 140px;
 }
 
 @media (max-width: 767px) {

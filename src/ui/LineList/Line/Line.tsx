@@ -2,15 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 import styles from './Line.module.css';
-
-interface ILineProps {
-  index: number;
-  currentIndex: number;
-  isActive: boolean;
-  isCompleted: boolean;
-  duration?: number;
-  onAnimationComplete?: () => void;
-}
+import { ILineProps } from './Line.props';
 
 export const Line = ({
   index,
@@ -28,6 +20,7 @@ export const Line = ({
   useEffect(() => {
     if (isCompleted) {
       // Если слайд уже просмотрен - полоска полностью закрашена
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setProgress(1);
     } else if (!isActive) {
       // Если не активен и не завершен - полоска пустая
@@ -41,7 +34,7 @@ export const Line = ({
       // Останавливаем анимацию если слайд не активен или уже завершен
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
-        animationRef.current = undefined;
+        animationRef.current = null;
       }
       return;
     }
@@ -64,13 +57,13 @@ export const Line = ({
       }
     };
 
-    startTimeRef.current = undefined;
+    startTimeRef.current = null;
     animationRef.current = requestAnimationFrame(animate);
 
     return () => {
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
-        animationRef.current = undefined;
+        animationRef.current = null;
       }
     };
   }, [isActive, isCompleted, duration, onAnimationComplete]);

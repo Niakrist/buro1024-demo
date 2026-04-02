@@ -17,8 +17,6 @@ export default function PublicationsPage() {
         />
       </Container>
 
-      {/* // */}
-      {/* <Container> */}
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <Publication
@@ -42,7 +40,6 @@ export default function PublicationsPage() {
           </div>
         </div>
       </div>
-      {/* </Container> */}
       <Container className={styles.journal}>
         <div>
           <img

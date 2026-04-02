@@ -21,11 +21,77 @@
   height: 100%;
   opacity: 0;
   visibility: hidden;
+  transition:
+    transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
+  transform: translateX(0);
 }
 
 .slideWrapper.active {
   opacity: 1;
   visibility: visible;
+}
+
+/* Анимации для слайдов */
+.slideInLeft {
+  animation: slideInFromLeft 0.5s ease-in-out forwards;
+}
+
+.slideInRight {
+  animation: slideInFromRight 0.5s ease-in-out forwards;
+}
+
+.slideOutLeft {
+  animation: slideOutToLeft 0.5s ease-in-out forwards;
+}
+
+.slideOutRight {
+  animation: slideOutToRight 0.5s ease-in-out forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
 }
 
 .prevButton,
@@ -42,6 +108,12 @@
   color: var(--white-color);
   border: none;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  opacity: 0.8;
 }
 
 .prevButton {

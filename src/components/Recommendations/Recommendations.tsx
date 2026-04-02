@@ -1,11 +1,7 @@
 import styles from './Recommendations.module.css';
-import { IProject } from '@/types';
 import Link from 'next/link';
 import { ImageUI } from '@/ui';
-
-interface IRecommendationsProps {
-  projects: IProject[];
-}
+import { IRecommendationsProps } from './Recommendations.props';
 
 export const Recommendations = ({ projects }: IRecommendationsProps) => {
   const fiveProjects = projects.slice(0, 5);
