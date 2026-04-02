@@ -21,6 +21,7 @@ export const NavMenu = ({ color, type }: INavMenuProps) => {
           key={item.url}
           color={isMobile && type === 'header' ? 'white' : color}
           type={type}
+          className={isMobile && type === 'header' ? styles.navMobile : ''}
         >
           {item.name}
         </UILink>

@@ -1,21 +1,32 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import styles from './CookiePortal.module.css';
 import { Button, Text, UILink } from '@/ui';
 
 export const CookiePortal = () => {
-  const [isVisible, setIsVisible] = useState(() => {
-    const hasConsented = sessionStorage.getItem('cookie-consent');
-    return !hasConsented;
-  });
+  const [isVisible, setIsVisible] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Проверяем наличие sessionStorage только на клиенте
+  useEffect(() => {
+    setIsMounted(true);
+
+    if (typeof window !== 'undefined') {
+      const hasConsented = sessionStorage.getItem('cookie-consent');
+      setIsVisible(!hasConsented);
+    }
+  }, []);
 
   const handleAccept = () => {
-    sessionStorage.setItem('cookie-consent', 'true');
-    setIsVisible(false);
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('cookie-consent', 'true');
+      setIsVisible(false);
+    }
   };
 
-  if (!isVisible) return null;
+  // Не показываем ничего до монтирования на клиенте
+  if (!isMounted || !isVisible) return null;
 
   const portalRoot = document.getElementById('cookie-portal');
 
