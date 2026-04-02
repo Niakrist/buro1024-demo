@@ -8,6 +8,7 @@
 }
 .footer {
   gap: 28px;
+  justify-content: flex-end;
 }
 
 @media (max-width: 1239px) {

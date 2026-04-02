@@ -1,19 +1,25 @@
 import { Htag, TagList } from '@/ui';
 import styles from './ImageUI.module.css';
 
-interface IImageUIProps {
-  img: string;
-  title?: string;
-  tags?: string[];
-  className?: string;
-}
 import cn from 'classnames';
+import { IImageUIProps } from './ImageUI.props';
 
-export const ImageUI = ({ img, title, tags, className }: IImageUIProps) => {
+export const ImageUI = ({
+  img,
+  title,
+  tags,
+  className,
+  type,
+}: IImageUIProps) => {
   return (
     <>
       <img src={img} alt={title} className={cn(styles.image, className)} />
-      <div className={styles.info}>
+      <div
+        className={cn(styles.info, {
+          [styles.mobileMain]: type === 'mobileMain',
+          [styles.mobileProjects]: type === 'mobileProjects',
+        })}
+      >
         {!!title && (
           <Htag color="white" size="medium" tag="h2">
             {title}

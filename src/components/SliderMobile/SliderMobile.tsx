@@ -2,15 +2,7 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import styles from './SliderMobile.module.css';
 import { ImageUI, LineList } from '@/ui';
-import { ISlide } from '@/types';
-
-interface ISliderMobileProps {
-  slides: ISlide[];
-  duration?: number;
-  onAllSlidesViewed?: () => void;
-  onRestart?: () => void; // колбэк при перезапуске
-  children?: (slide: any, index: number) => React.ReactNode;
-}
+import { ISliderMobileProps } from './SliderMobile.props';
 
 export const SliderMobile = ({
   slides,
@@ -18,6 +10,7 @@ export const SliderMobile = ({
   onAllSlidesViewed,
   onRestart,
   children,
+  type,
 }: ISliderMobileProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [completedSlides, setCompletedSlides] = useState<Set<number>>(
@@ -148,6 +141,7 @@ export const SliderMobile = ({
                   img={slide.img}
                   title={slide.title}
                   tags={slide.tags}
+                  type={type}
                 />
               </div>
             )}

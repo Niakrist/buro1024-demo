@@ -1,10 +1,11 @@
 'use client';
-import { UILink, Icon, Button, MenuBurger } from '@/ui';
+import { UILink, Icon, MenuBurger } from '@/ui';
 import styles from './Header.module.css';
 import { IHeaderProps } from './Header.props';
 import cn from 'classnames';
 import { useEffect, useState } from 'react';
 import { useMobile } from '@/hooks';
+import { PHONE_TEL } from '@/constants';
 
 export const Header = ({
   children,
@@ -43,6 +44,7 @@ export const Header = ({
           [styles.absolute]: absolute,
           [styles.paddingSmall]: padding === 'small',
           [styles.paddingStandart]: padding === 'standart',
+          [styles.showNav]: isShow,
         },
         className,
       )}
@@ -63,24 +65,26 @@ export const Header = ({
         {children}
 
         {isMobile ? (
-          <Button
-            bg="white"
-            color="black"
-            size="full"
-            fontWeight="fv500"
-            uppercase
+          <a
+            href={`https://t.me/${PHONE_TEL}`}
+            className={styles.mobileLink}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Recreate
-          </Button>
+          </a>
         ) : (
-          <Button
-            bg={blackTheme ? 'white' : 'black'}
-            color={blackTheme ? 'black' : 'white'}
-            size="small"
-            uppercase
+          <a
+            href={`https://t.me/${PHONE_TEL}`}
+            className={cn(
+              styles.desctopLink,
+              blackTheme ? styles.black : styles.white,
+            )}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Recreate
-          </Button>
+          </a>
         )}
       </nav>
     </header>

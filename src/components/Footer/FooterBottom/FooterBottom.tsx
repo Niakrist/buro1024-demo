@@ -1,5 +1,4 @@
 import { Container, UILink } from '@/ui';
-import React from 'react';
 import styles from './FooterBottom.module.css';
 import { OFFICIAL, REQUISITES } from '@/constants';
 

@@ -1,15 +1,7 @@
 'use client';
-
 import { Line } from './Line/Line';
 import styles from './LineList.module.css';
-
-interface ILineListProps {
-  items: any[];
-  currentIndex: number;
-  duration?: number;
-  onSlideComplete?: (index: number) => void;
-  completedSlides?: Set<number>;
-}
+import { ILineListProps } from './LineList.props';
 
 export const LineList = ({
   items,

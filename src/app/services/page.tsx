@@ -26,6 +26,7 @@ export default function ServicesPage() {
                 size="standart"
                 underline
                 href={`.${service.url}`}
+                className={styles.lineHeight}
               >
                 {service.link}
               </UILink>

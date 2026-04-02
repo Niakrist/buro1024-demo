@@ -1,17 +1,7 @@
-import React from 'react';
-
 import cn from 'classnames';
 
 import styles from './Htag.module.css';
-
-interface IHtagProps {
-  tag: 'h1' | 'h2' | 'h3';
-  children: React.ReactNode;
-  color: 'white' | 'black';
-  size: 'small' | 'medium' | 'big';
-  className?: string;
-  hidden?: boolean;
-}
+import { IHtagProps } from './Htag.props';
 
 export const Htag = ({
   tag,
