@@ -15,19 +15,19 @@
   color: var(--black-color);
 }
 
-.wrapper {
-  position: relative;
-  /* height: 100vh; */
+.wrapperGallery {
+  padding: 0 4px;
 }
 
-.wrapperOne {
-  position: relative;
-  /* height: 100vh; */
-  margin-bottom: 80px;
-}
+@media (max-width: 1239px) {
+  .title {
+    margin-bottom: 20px;
+  }
 
-.flex {
-  display: flex;
-  gap: 4px;
-  margin-bottom: 80px;
+  .mainPage.mainPage {
+    padding: 36px 8px 20px 8px;
+  }
+  .wrapperGallery {
+    padding: 0 8px;
+  }
 }

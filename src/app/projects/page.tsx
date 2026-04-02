@@ -14,6 +14,7 @@ export default function ProjectsPage() {
           item1={PROJECTS_DATA[0]}
           className={styles.pt43}
           mb="medium"
+          type="mobileProjects"
         />
         <GalleryContainer
           item1={PROJECTS_DATA[1]}

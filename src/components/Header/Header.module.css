@@ -28,8 +28,6 @@
 
 .link {
   font-size: 0;
-  /* width: 40px;
-  height: 40px; */
 }
 
 .iconLogo {
@@ -37,11 +35,58 @@
   height: 60px;
 }
 
+.mobileLink {
+  padding: 17px 10px 15px;
+  width: 100%;
+
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--black-color);
+  text-align: center;
+
+  border-radius: 4px;
+  background-color: var(--white-color);
+}
+
+.desctopLink {
+  display: inline-block;
+  padding: 9px 16px 8px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  border-radius: 4px;
+
+  transition: border-radius 0.3s;
+}
+
+.white {
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.black {
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+
+.desctopLink:hover {
+  border-radius: 140px;
+}
+
 @media (max-width: 1239px) {
   .paddingSmall,
   .paddingStandart {
     padding: 20px 8px;
   }
+
+  .showNav {
+    padding: 40px 8px;
+  }
+
   .iconLogo {
     width: 100px;
     height: 40px;
@@ -56,7 +101,7 @@
   }
 
   .mobNav {
-    padding: 140px 8px 8px;
+    padding: 140px 8px 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

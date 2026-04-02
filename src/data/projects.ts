@@ -310,7 +310,7 @@ export const PROJECTS_DATA = [
       { size: 'small', img: '/re-s-8.jpg' },
       { size: 'small', img: '/re-s-9.jpg' },
       { size: 'small', img: '/re-s-10.jpg' },
-      { size: 'medium', img: '/re-s-11.jpg' },
+      { size: 'large', img: '/re-s-11.jpg' },
     ],
     url: URL.otelVSochi,
   },

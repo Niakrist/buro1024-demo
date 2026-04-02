@@ -3,7 +3,7 @@ import styles from './GalleryContainer.module.css';
 import cn from 'classnames';
 import { IGalleryContainerProps } from './GalleryContainer.props';
 import Link from 'next/link';
-
+//   type?: 'mobileMain' | 'mobileProjects';
 export const GalleryContainer = ({
   item1,
   item2,
@@ -11,6 +11,7 @@ export const GalleryContainer = ({
   vh,
   mb,
   className,
+  type,
 }: IGalleryContainerProps) => {
   if (item1 && item2 && item3) {
     return (
@@ -54,7 +55,7 @@ export const GalleryContainer = ({
     return (
       <div
         className={cn(
-          styles.wrapper,
+          styles.wrapperMedium,
           { [styles.smallMb]: mb === 'small' },
           { [styles.mediumMb]: mb === 'medium' },
           { [styles.bigMb]: mb === 'big' },
@@ -98,6 +99,7 @@ export const GalleryContainer = ({
             tags={item1.tags}
             title={item1.title}
             className={styles.heightMobileBig}
+            type={type}
           />
         </Link>
       </div>

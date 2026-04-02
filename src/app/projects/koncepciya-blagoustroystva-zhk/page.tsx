@@ -1,5 +1,11 @@
 import { Container, Htag, NavMenu } from '@/ui';
-import { Content, Galery, Header, Recommendations, Slider } from '@/components';
+import {
+  Content,
+  Galery,
+  Header,
+  Recommendations,
+  SliderSwitch,
+} from '@/components';
 import { PROJECTS_DATA } from '@/data';
 import {
   adapterContent,
@@ -16,10 +22,10 @@ export default function KoncepciyaBlagoustroystvaZhkPage() {
 
   return (
     <>
-      <Header absolute color="white">
+      <Header absolute color="white" className={styles.headerMobile}>
         <NavMenu color="white" type="header" />
       </Header>
-      <Slider slides={slides} />
+      <SliderSwitch slides={slides} />
       <Content
         title={content.title}
         description={content.description}
